@@ -1,0 +1,79 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body, .body{
+    margin: 0;
+    padding: 0;
+    background: $background-color;
+    font-family: 'Montserrat Alternates', sans-serif;
+    min-height: 1000px;
+    color: $text-color;
+    //scroll-behavior: smooth;
+    //padding-top: 100px;
+}
+
+.body{
+    padding-top: 100px;
+    letter-spacing: 1px;
+}
+
+*{
+    box-sizing: border-box;
+    outline: hidden;
+}
+
+.card{
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 200px;
+    width: 300px;
+    background: $primary-color;
+    //margin: 20px;
+    box-shadow: 5px 8px 15px 0px $shadow;
+}
+
+h1.title{
+    text-align: center;
+    margin: 70px 0 50px 0;
+    letter-spacing: 5px;
+    color: $title-color;
+    text-shadow: 5px 5px 6px $shadow;
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    text-transform: capitalize;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-top-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    box-shadow: 5px 8px 15px 0px $shadow;
+    padding: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    a{
+        width: 100%;
+        height: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
+/* line 6, ../sass/base/_base.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 10, ../sass/base/_base.scss */
+body, .body {
+  margin: 0;
+  padding: 0;
+  background: #754c24;
+  font-family: 'Montserrat Alternates', sans-serif;
+  min-height: 1000px;
+  color: #f4f4f4;
+}
+
+/* line 21, ../sass/base/_base.scss */
+.body {
+  padding-top: 100px;
+  letter-spacing: 1px;
+}
+
+/* line 26, ../sass/base/_base.scss */
+* {
+  box-sizing: border-box;
+  outline: hidden;
+}
+
+/* line 31, ../sass/base/_base.scss */
+.card {
+  margin: 0 auto;
+  border-radius: 15px;
+  height: 200px;
+  width: 300px;
+  background: #0d3f67;
+  box-shadow: 5px 8px 15px 0px rgba(78, 53, 25, 0.568);
+}
+
+/* line 41, ../sass/base/_base.scss */
+h1.title {
+  text-align: center;
+  margin: 70px 0 50px 0;
+  letter-spacing: 5px;
+  color: #1d1919;
+  text-shadow: 5px 5px 6px rgba(78, 53, 25, 0.568);
+  font-size: 40px;
+  font-family: 'Staatliches', cursive;
+  text-transform: capitalize;
+}
+
+/* line 52, ../sass/base/_base.scss */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 58, ../sass/base/_base.scss */
+.to-top-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0d3f67;
+  box-shadow: 5px 8px 15px 0px rgba(78, 53, 25, 0.568);
+  padding: 5px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+/* line 70, ../sass/base/_base.scss */
+.to-top-button a {
+  width: 100%;
+  height: 100%;
+}
+/* line 75, ../sass/base/_base.scss */
+.to-top-button img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../sass/modules/_parallax.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+/* line 7, ../sass/modules/_parallax.scss */
+.parallax {
+  min-height: 140vh;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 14, ../sass/modules/_parallax.scss */
+.mobile-parallax {
+  display: none;
+  min-height: 140vh;
+  height: auto;
+  background-image: url(D:/work/Travel/images/complete-illustration-picture-mparallax.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 24, ../sass/modules/_parallax.scss */
+.layer {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 140vh;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* line 38, ../sass/modules/_parallax.scss */
+.layer-bg {
+  background-image: url(D:/work/Travel/images/background2withClouds.png);
+}
+
+/* line 42, ../sass/modules/_parallax.scss */
+.layer-one {
+  background-image: url(D:/work/Travel/images/mid-mountains1.png);
+}
+
+/* line 46, ../sass/modules/_parallax.scss */
+.layer-text {
+  text-align: center;
+}
+
+/* line 50, ../sass/modules/_parallax.scss */
+.layer-text h1 {
+  background: linear-gradient(to bottom, red, #b80808, #690202, rgba(43, 0, 0, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: 'Luna';
+  position: relative;
+  top: -100px;
+  -webkit-text-size-adjust: auto;
+  font-size: 400%;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin: auto;
+}
+
+/* line 69, ../sass/modules/_parallax.scss */
+.layer-two {
+  background-image: url(D:/work/Travel/images/cloudsLayer.png);
+}
+
+/* line 73, ../sass/modules/_parallax.scss */
+.layer-three {
+  background-image: url(D:/work/Travel/images/frontmost1.png);
+}
+
+/* line 77, ../sass/modules/_parallax.scss */
+.layer-four {
+  background-image: url(D:/work/Travel/images/blender1.png);
+}
+
+@media (max-width: 768px) {
+  /* line 83, ../sass/modules/_parallax.scss */
+  .parallax {
+    display: none;
+  }
+
+  /* line 87, ../sass/modules/_parallax.scss */
+  .mobile-parallax {
+    display: block;
+  }
+}
+/* line 92, ../sass/modules/_parallax.scss */
+.content {
+  background-color: #754c24;
+  min-height: 1000px;
+  padding-top: 100px;
+  /* margin-top: -70px; */
+  color: #ececec;
+}

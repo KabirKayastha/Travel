@@ -1,0 +1,98 @@
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.parallax{
+    min-height: 140vh;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.mobile-parallax{
+    display: none;
+    min-height: 140vh;
+    height: auto;
+    background-image: url(D:/work/Travel/images/complete-illustration-picture-mparallax.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layer{
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 140vh; 
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.layer-bg{
+    background-image: url(D:/work/Travel/images/background2withClouds.png);
+}
+
+.layer-one{
+    background-image: url(D:/work/Travel/images/mid-mountains1.png);
+}
+
+.layer-text{
+    text-align: center;
+}
+
+.layer-text h1{
+    background: linear-gradient(to bottom,rgb(255, 0, 0), rgb(184, 8, 8), rgb(105, 2, 2),rgba(43, 0, 0, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: 'Luna';
+    position: relative;
+    top: -100px;
+    -webkit-text-size-adjust: auto;
+    font-size: 400%;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin: auto;
+}
+
+// .layer-twoAnim{
+//     background-image: url(D:/work/Travel/images/background2withClouds.png);
+// }
+
+.layer-two{
+    background-image: url(D:/work/Travel/images/cloudsLayer.png);
+}
+
+.layer-three{
+    background-image: url(D:/work/Travel/images/frontmost1.png);
+}
+
+.layer-four{
+    background-image: url(D:/work/Travel/images/blender1.png);
+}
+
+@media(max-width: 768px){
+
+    .parallax{
+        display: none;
+    }
+
+    .mobile-parallax{
+        display: block;
+    }
+}
+
+.content{
+    background-color:#754c24;
+    min-height: 1000px;
+    padding-top: 100px;
+    /* margin-top: -70px; */
+    color: #ececec;
+}
