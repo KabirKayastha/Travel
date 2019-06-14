@@ -1,0 +1,117 @@
+#tours{
+    .wrapper{
+        padding: 0 20px;
+
+        .card{
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; 
+            //flex-wrap: nowrap;
+            transition: background-color 2s ease-in-out;
+
+            img{
+                height: 100%;
+                width: auto;
+                // transform: scale(1.5);
+                transition: height 2s ease-in-out 1s;
+            }
+
+            .card-desc{
+                //height: 0;
+                //padding: 5px 0 15px 0;
+                // overflow: hidden;
+                transform: translateY(30px);
+
+                transition: height 2s ease-in-out 1s;
+
+                h4{
+                    text-transform: capitalize;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                p{
+                    font-size: 12px;
+                    text-align: center;
+                    
+                }
+            }
+
+            &:hover{
+                transform: scale(1.2);
+                border-radius: 15px;
+
+                // img{
+                //     height: 75%;
+                // }
+
+                .card-desc{
+                    transform: translateY(-200px);
+                    padding: 5px 0 15px 0;
+                }
+            }
+        }
+
+        .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+            background: $button-color;
+            color: transparent;
+            border: none;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            @extend %fa-icon;
+            @extend .fas;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .owl-carousel .owl-nav button.owl-next{
+
+            &::before{
+                content: fa-content($fa-var-arrow-right);
+                position: relative;
+                //left: 5px;
+                color: $text-color;
+                padding: 0;
+                // background: blue;
+                font-size: 30px;
+            }
+        }
+
+        .owl-carousel .owl-nav button.owl-prev{
+
+            &::before{
+                content: fa-content($fa-var-arrow-left);
+                position: relative;
+                //left: 5px;
+                color: $text-color;
+                padding: 0;
+                // background: blue;
+                font-size: 30px;
+            }
+        }
+
+
+
+        .owl-carousel .owl-nav{
+            position: absolute;
+            top: 0;
+            margin-left: -80px;
+            width: calc(100% + 160px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            z-index: -1;
+
+        }
+
+        .owl-carousel .owl-dots{
+            display: none;
+        }
+    }
+
+}

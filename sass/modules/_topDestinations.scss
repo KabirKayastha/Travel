@@ -1,0 +1,29 @@
+#top-destination{
+
+    .card-container{
+
+        .card{
+            width: 250px;
+            //height: 250px;
+            display: flex;
+            flex-direction: column;
+
+
+            img{
+                height: 220px;
+                
+            }
+
+            .card-desc{
+                padding: 10px 0 15px 0;
+
+                h3{
+                    text-align: center;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}

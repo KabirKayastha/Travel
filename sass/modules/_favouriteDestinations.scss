@@ -1,0 +1,58 @@
+#favourite{
+
+    .card-container{
+
+        .card{
+            height: 300px;
+            width: 300px;
+            // overflow: visible;
+            //display: flex;
+            justify-content: center;
+            
+            img.card-image{
+                height: 100%;
+            }
+
+            span.tag{
+                position: relative;
+                bottom: 100px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                float: right;
+                background: rgba(231, 152, 42, 0.527);
+                padding: 8px 0px 8px 12px;
+                border-radius: 5px 0 0 5px;
+
+                h4{
+                    margin: 0;
+                    text-transform: capitalize;
+                }
+
+
+                .icon-container{
+                    width: 30px;
+                    height: 30px;
+                    padding: 2px;
+                    margin: 0 10px 0 10px;
+                    background: $text-color;
+
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover{
+                        background: #ddd;
+                    }
+                }
+            }
+        }
+    }
+}

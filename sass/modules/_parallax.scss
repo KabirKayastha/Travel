@@ -1,9 +1,3 @@
-.container{
-    margin: 0 auto;
-    max-width: 1000px;
-    text-align: justify;
-}
-
 .parallax{
     min-height: 140vh;
     height: auto;
@@ -12,10 +6,11 @@
 }
 
 .mobile-parallax{
-    display: none;
-    min-height: 140vh;
+    // display: none;
+    width: 100%;
+    min-height: 120vh;
     height: auto;
-    background-image: url(D:/work/Travel/images/complete-illustration-picture-mparallax.jpg);
+    background-image: url(D:/work/Travel/images/parallax/complete-illustration-picture-mparallax.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,11 +31,11 @@
 }
 
 .layer-bg{
-    background-image: url(D:/work/Travel/images/background2withClouds.png);
+    background-image: url(D:/work/Travel/images/parallax/background2withClouds.png);
 }
 
 .layer-one{
-    background-image: url(D:/work/Travel/images/mid-mountains1.png);
+    background-image: url(D:/work/Travel/images/parallax/mid-mountains1.png);
 }
 
 .layer-text{
@@ -67,18 +62,29 @@
 // }
 
 .layer-two{
-    background-image: url(D:/work/Travel/images/cloudsLayer.png);
+    background-image: url(D:/work/Travel/images/parallax/cloudsLayer.png);
 }
 
 .layer-three{
-    background-image: url(D:/work/Travel/images/frontmost1.png);
+    background-image: url(D:/work/Travel/images/parallax/frontmost1.png);
 }
 
 .layer-four{
-    background-image: url(D:/work/Travel/images/blender1.png);
+    background-image: url(D:/work/Travel/images/parallax/blender1.png);
 }
 
-@media(max-width: 768px){
+@media(min-width: 1000px){
+
+    .parallax{
+        display: block;
+    }
+
+    .mobile-parallax{
+        display: none;
+    }
+}
+
+@media(max-width: 1000px){
 
     .parallax{
         display: none;

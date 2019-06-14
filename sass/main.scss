@@ -1,3 +1,10 @@
 @import "base/_variables.scss";
 @import "base/_base.scss";
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/solid.scss";
 @import "modules/_parallax.scss";
+@import "modules/_navbar.scss";
+@import "modules/_header.scss";
+@import "modules/_tours.scss";
+@import "modules/_topDestinations.scss";
+@import "modules/_favouriteDestinations.scss";

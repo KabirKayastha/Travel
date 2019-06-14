@@ -1,0 +1,27 @@
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    letter-spacing: 1.5px;
+    background: rgba(78, 53, 25, 0.315);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &.right-header{
+            text-transform: capitalize;
+        }
+
+        li{
+            margin: 0 10px;
+        }
+    }
+}
