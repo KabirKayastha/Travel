@@ -1,11 +1,15 @@
 #navbar{
+    width: calc(100% + 160px);
+    margin-left: -80px;
+    background: #684521;
+    display: flex;
+    justify-content: center;
 
     ul{
         list-style: none;
-        width: calc(100% + 160px);
-        margin-left: -80px; 
-        background: rgba(78, 53, 25, 0.315);
-        height: auto;
+        width: 80%;
+        height: 100%;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -29,6 +33,17 @@
         }
     }
 }
+
+.affix {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0px 5px 15px 0px $shadow;
+}
+
 
 .logo-container{
     width: calc(100% + 160px);
