@@ -23,19 +23,19 @@ body, .body {
   letter-spacing: 1px;
 }
 
-/* line 25, ../sass/base/_base.scss */
+/* line 29, ../sass/base/_base.scss */
 * {
   box-sizing: border-box;
   outline: hidden;
 }
 
-/* line 30, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 a {
   text-decoration: none;
   color: #f4f4f4;
 }
 
-/* line 35, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
 .card-container {
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@ a {
   flex-wrap: wrap;
 }
 
-/* line 42, ../sass/base/_base.scss */
+/* line 46, ../sass/base/_base.scss */
 .card {
   margin: 20px;
   border-radius: 15px;
@@ -52,10 +52,11 @@ a {
   overflow: hidden;
 }
 
-/* line 50, ../sass/base/_base.scss */
+/* line 54, ../sass/base/_base.scss */
 h1.title {
   text-align: center;
-  margin: 70px 0 50px 0;
+  margin: 0px 0 50px 0;
+  padding: 70px 0 0 0;
   letter-spacing: 5px;
   color: #1d1919;
   text-shadow: 5px 5px 6px rgba(78, 53, 25, 0.568);
@@ -64,7 +65,7 @@ h1.title {
   text-transform: capitalize;
 }
 
-/* line 61, ../sass/base/_base.scss */
+/* line 66, ../sass/base/_base.scss */
 .icon-container {
   display: flex;
   justify-content: center;
@@ -72,7 +73,7 @@ h1.title {
   border-radius: 50%;
 }
 
-/* line 68, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 .to-top-button {
   width: 60px;
   height: 60px;
@@ -85,18 +86,18 @@ h1.title {
   z-index: 99;
   cursor: pointer;
 }
-/* line 80, ../sass/base/_base.scss */
+/* line 85, ../sass/base/_base.scss */
 .to-top-button a {
   width: 100%;
   height: 100%;
 }
-/* line 85, ../sass/base/_base.scss */
+/* line 90, ../sass/base/_base.scss */
 .to-top-button img {
   width: 100%;
   height: 100%;
 }
 
-/* line 91, ../sass/base/_base.scss */
+/* line 96, ../sass/base/_base.scss */
 .svg-icon, .sm-icon {
   color: #1d1919;
   font-weight: bolder;
@@ -104,7 +105,7 @@ h1.title {
   width: 20px;
 }
 
-/* line 98, ../sass/base/_base.scss */
+/* line 103, ../sass/base/_base.scss */
 .primary-button {
   padding: 7px 15px;
   border: none;

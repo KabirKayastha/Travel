@@ -22,6 +22,10 @@ body, .body{
     letter-spacing: 1px;
 }
 
+// body{
+//     padding: 0 100px;
+// }
+
 *{
     box-sizing: border-box;
     outline: hidden;
@@ -49,7 +53,8 @@ a{
 
 h1.title{
     text-align: center;
-    margin: 70px 0 50px 0;
+    margin: 0px 0 50px 0;
+    padding: 70px 0 0 0;
     letter-spacing: 5px;
     color: $title-color;
     text-shadow: 5px 5px 6px $shadow;
