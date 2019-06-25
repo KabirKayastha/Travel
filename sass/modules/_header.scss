@@ -3,11 +3,15 @@
     top: 0;
     width: 100%;
     letter-spacing: 1.5px;
-    background: rgba(78, 53, 25, 0.315);
+    background: rgba(37, 37, 37, 0.315);
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .sm-icon{
+        color: #191919;
+    }
 
     ul{
         list-style: none;
@@ -22,6 +26,7 @@
 
         li{
             margin: 0 10px;
+
         }
     }
 }

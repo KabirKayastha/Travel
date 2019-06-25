@@ -55,12 +55,13 @@ h1.title{
     text-align: center;
     margin: 0px 0 50px 0;
     padding: 70px 0 0 0;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
     color: $title-color;
     text-shadow: 5px 5px 6px $shadow;
     font-size: 40px;
     font-family: 'Staatliches', cursive;
     text-transform: capitalize;
+    font-variant: small-caps;
 }
 
 .icon-container{
@@ -95,7 +96,7 @@ h1.title{
 
 .svg-icon, .sm-icon{
     color: $title-color;
-    font-weight: bolder;
+    font-weight: bolder;        
     margin: 0 5px;
     width: 20px;
 }
@@ -111,4 +112,18 @@ h1.title{
     letter-spacing: 2px;
     outline: transparent;
     cursor: pointer;
+}
+
+img.lazy-load{
+    transform: translateY(-50%);
+    // opacity: 0;
+
+    transition: all 500ms;
+}
+
+.lazy-fade{
+    transform: translateY(0);
+    opacity: 1;
+
+    transition: all 500ms;
 }

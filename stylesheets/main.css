@@ -10,7 +10,7 @@ html {
 body, .body {
   margin: 0;
   padding: 0;
-  background: #754c24;
+  background: #292929;
   min-height: 1000px;
   color: #f4f4f4;
   overflow-x: hidden;
@@ -48,7 +48,7 @@ a {
   margin: 20px;
   border-radius: 15px;
   background: #0d3f67;
-  box-shadow: 5px 8px 15px 0px rgba(78, 53, 25, 0.568);
+  box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
   overflow: hidden;
 }
 
@@ -57,15 +57,16 @@ h1.title {
   text-align: center;
   margin: 0px 0 50px 0;
   padding: 70px 0 0 0;
-  letter-spacing: 5px;
-  color: #1d1919;
-  text-shadow: 5px 5px 6px rgba(78, 53, 25, 0.568);
+  letter-spacing: 7px;
+  color: #e6e6e6;
+  text-shadow: 5px 5px 6px rgba(26, 26, 26, 0.569);
   font-size: 40px;
   font-family: 'Staatliches', cursive;
   text-transform: capitalize;
+  font-variant: small-caps;
 }
 
-/* line 66, ../sass/base/_base.scss */
+/* line 67, ../sass/base/_base.scss */
 .icon-container {
   display: flex;
   justify-content: center;
@@ -73,50 +74,63 @@ h1.title {
   border-radius: 50%;
 }
 
-/* line 73, ../sass/base/_base.scss */
+/* line 74, ../sass/base/_base.scss */
 .to-top-button {
   width: 60px;
   height: 60px;
   padding: 5px;
   background-color: #0d3f67;
-  box-shadow: 5px 8px 15px 0px rgba(78, 53, 25, 0.568);
+  box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 99;
   cursor: pointer;
 }
-/* line 85, ../sass/base/_base.scss */
+/* line 86, ../sass/base/_base.scss */
 .to-top-button a {
   width: 100%;
   height: 100%;
 }
-/* line 90, ../sass/base/_base.scss */
+/* line 91, ../sass/base/_base.scss */
 .to-top-button img {
   width: 100%;
   height: 100%;
 }
 
-/* line 96, ../sass/base/_base.scss */
+/* line 97, ../sass/base/_base.scss */
 .svg-icon, .sm-icon {
-  color: #1d1919;
+  color: #e6e6e6;
   font-weight: bolder;
   margin: 0 5px;
   width: 20px;
 }
 
-/* line 103, ../sass/base/_base.scss */
+/* line 104, ../sass/base/_base.scss */
 .primary-button {
   padding: 7px 15px;
   border: none;
   border-radius: 15px;
   background-color: #e7992a;
-  box-shadow: 3px 3px 15px 0px rgba(78, 53, 25, 0.568);
+  box-shadow: 3px 3px 15px 0px rgba(26, 26, 26, 0.569);
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: bolder;
   letter-spacing: 2px;
   outline: transparent;
   cursor: pointer;
+}
+
+/* line 117, ../sass/base/_base.scss */
+img.lazy-load {
+  transform: translateY(-50%);
+  transition: all 500ms;
+}
+
+/* line 124, ../sass/base/_base.scss */
+.lazy-fade {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 500ms;
 }
 
 /*!
@@ -7422,7 +7436,7 @@ readers do not read off random characters that represent icons */
 
 /* line 72, ../sass/modules/_parallax.scss */
 .layer-four {
-  background-image: url(D:/work/Travel/images/parallax/blender1.png);
+  background-image: url(D:/work/Travel/images/parallax/blender292929.png);
 }
 
 @media (min-width: 1000px) {
@@ -7460,11 +7474,11 @@ readers do not read off random characters that represent icons */
 #navbar {
   width: calc(100% + 160px);
   margin-left: -80px;
-  background: #684521;
+  background: #292929;
   display: flex;
   justify-content: center;
 }
-/* line 8, ../sass/modules/_navbar.scss */
+/* line 9, ../sass/modules/_navbar.scss */
 #navbar ul {
   list-style: none;
   width: 80%;
@@ -7475,21 +7489,21 @@ readers do not read off random characters that represent icons */
   align-items: center;
   padding: 0 80px;
 }
-/* line 19, ../sass/modules/_navbar.scss */
+/* line 20, ../sass/modules/_navbar.scss */
 #navbar ul li {
   margin: auto;
   padding: 15px;
 }
-/* line 23, ../sass/modules/_navbar.scss */
+/* line 24, ../sass/modules/_navbar.scss */
 #navbar ul li.active {
   border-bottom: 3px solid #e7992a;
 }
-/* line 29, ../sass/modules/_navbar.scss */
+/* line 30, ../sass/modules/_navbar.scss */
 #navbar ul li a:hover {
   color: #dcddde;
 }
 
-/* line 37, ../sass/modules/_navbar.scss */
+/* line 38, ../sass/modules/_navbar.scss */
 .affix {
   position: fixed;
   top: 0px;
@@ -7497,10 +7511,10 @@ readers do not read off random characters that represent icons */
   width: 100%;
   z-index: 9999;
   display: none;
-  box-shadow: 0px 5px 15px 0px rgba(78, 53, 25, 0.568);
+  box-shadow: 0px 5px 15px -3px rgba(26, 26, 26, 0.569);
 }
 
-/* line 48, ../sass/modules/_navbar.scss */
+/* line 49, ../sass/modules/_navbar.scss */
 .logo-container {
   width: calc(100% + 160px);
   display: flex;
@@ -7509,7 +7523,7 @@ readers do not read off random characters that represent icons */
   height: 55px;
   margin: 20px 0 10px -80px;
 }
-/* line 56, ../sass/modules/_navbar.scss */
+/* line 57, ../sass/modules/_navbar.scss */
 .logo-container img {
   height: 100%;
 }
@@ -7520,24 +7534,28 @@ readers do not read off random characters that represent icons */
   top: 0;
   width: 100%;
   letter-spacing: 1.5px;
-  background: rgba(78, 53, 25, 0.315);
+  background: rgba(37, 37, 37, 0.315);
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 /* line 12, ../sass/modules/_header.scss */
+#header .sm-icon {
+  color: #191919;
+}
+/* line 16, ../sass/modules/_header.scss */
 #header ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 19, ../sass/modules/_header.scss */
+/* line 23, ../sass/modules/_header.scss */
 #header ul.right-header {
   text-transform: capitalize;
 }
-/* line 23, ../sass/modules/_header.scss */
+/* line 27, ../sass/modules/_header.scss */
 #header ul li {
   margin: 0 10px;
 }
