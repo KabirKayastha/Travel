@@ -64,6 +64,19 @@ h1.title{
     font-variant: small-caps;
 }
 
+h3.sub-title{
+    text-align: center;
+    margin: -20px 0 50px 0;
+    // padding: 0px 0 0 0;
+    letter-spacing: 7px;
+    color: $title-color;
+    text-shadow: 5px 5px 6px $shadow;
+    font-size: 26px;
+    font-family: 'Staatliches', cursive;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
 .icon-container{
     display: flex;
     justify-content: center;

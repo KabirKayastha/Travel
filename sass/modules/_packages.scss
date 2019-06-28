@@ -1,0 +1,95 @@
+#packages{
+
+    .card-container{
+
+        .card{
+            height: 320px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            // align-items: flex-end;
+            flex-direction: column;
+
+            background-size: cover;
+            background-position: center, top;
+
+            span{
+                height: 60px;
+                width: 60px;
+                margin: 15px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+                background: rgba(231, 152, 42, 0.527);
+
+                h5{
+                    text-transform: capitalize;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+
+            .card-image{
+                height: 80%;
+            }
+
+            .card-desc{
+                height: 20%;
+                width: 100%;
+                background-color: $primary-color;
+                display: flex;
+                align-items: center;
+
+                .desc{
+
+                    h4{
+                        margin: 0;
+                        padding: 0px 0px 7px 20px;
+                    }
+                    
+                    p{
+                        margin: 0;
+                        padding: 0px 20px;
+                    }
+                }
+
+                .icon-container{
+                    width: 30px;
+                    height: 30px;
+                    padding: 2px;
+                    margin: 0 10px 0 10px;
+                    background: $text-color;
+
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover{
+                        background: #ddd;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .button-container{
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        
+        a{
+            margin: 0 auto;
+        }
+    }
+}

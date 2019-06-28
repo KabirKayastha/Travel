@@ -1,0 +1,38 @@
+#gallery{
+
+    .wrapper{
+
+        .owl-carousel .owl-dots{
+            margin-top: 30px;
+            display: block;
+        }
+        
+        .owl-carousel .owl-nav{
+            display: none;
+        }
+        
+        .img-container{
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 3px; 
+            background: $primary-color;
+            
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    .button-container{
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        
+        a{
+            margin: 0 auto;
+        }
+    }
+}
