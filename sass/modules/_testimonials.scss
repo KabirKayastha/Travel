@@ -10,28 +10,87 @@
             
             .card{
                 height: 400px;
-                max-width: 100%;
+                max-width: 50%;
                 border-radius: 5px;
                 background-color: rgba(121, 121, 121, 0.199);
                 box-shadow: 0px 10px 20px -12px #191919;
                 display: flex;
-                flex-direction: column;
+                // flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
                 padding: 25px 30px;
 
                 .profile-img{
-                    border-radius: 50%;
-                    height: 90px;
-                }
+                    border-radius: 7px;
+                    width: 40%;
+                    height: 90%;
+                    background: $primary-color;
+                    overflow: hidden;
 
-                .profile-desc{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-                    h4, h5{
-                        text-align: center;
-                        margin: 5px 0;
-                        text-transform: capitalize;
+                    img{
+                        // display: none;
+                        height: 100%;
                     }
+                }
+                
+                .review-content{
+                    width: 60%;
+                    padding: 20px 30px;
+
+                    .review-text{
+                        
+                        @extend %fa-icon;
+                        @extend .fas;
+
+                        
+                        &:before{
+                            content: fa-content($fa-var-quote-left);
+                            font-size: 40px;
+                            color: rgba(255, 255, 255, 0.548);
+                        }  
+                        &:after{
+                            content: fa-content($fa-var-quote-right);
+                            font-size: 40px;
+                            position: relative;
+                            left: calc(100% - 30px);
+                            color: rgba(255, 255, 255, 0.548);
+                        }  
+                        
+                        p{
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            line-height: 26px;
+                            padding-top: 10px;
+                            
+                            
+                            a{
+                                color: $button-color;
+                                
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            
+                        }
+
+                    }
+
+                    .profile-desc{
+                        margin-top: 30px;
+
+                        
+                        h4, h5{
+                            text-align: center;
+                            margin: 5px 0;
+                            text-transform: capitalize;
+                        }
+                        
+                
+                    }
+                
                 }
             }
         }

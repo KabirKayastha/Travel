@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -45,7 +46,7 @@ a{
 
 .card{
     margin: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     background: $primary-color;
     box-shadow: 5px 8px 15px 0px $shadow;
     overflow: hidden;
