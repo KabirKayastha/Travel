@@ -11,7 +11,6 @@ body, .body {
   margin: 0;
   padding: 0;
   background: #292929;
-  min-height: 1000px;
   color: #f4f4f4;
   overflow-x: hidden;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -19,14 +18,14 @@ body, .body {
 
 /* line 21, ../sass/base/_base.scss */
 .body {
-  padding: 100px 80px;
+  padding: 100px 80px 0 80px;
   letter-spacing: 1px;
 }
 
 /* line 30, ../sass/base/_base.scss */
 * {
   box-sizing: border-box;
-  outline: hidden;
+  outline: transparent;
 }
 
 /* line 35, ../sass/base/_base.scss */
@@ -91,27 +90,30 @@ h3.sub-title {
 .to-top-button {
   width: 60px;
   height: 60px;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
   background-color: #0d3f67;
   box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   z-index: 99;
   cursor: pointer;
 }
-/* line 100, ../sass/base/_base.scss */
+/* line 103, ../sass/base/_base.scss */
 .to-top-button a {
   width: 100%;
   height: 100%;
 }
-/* line 105, ../sass/base/_base.scss */
+/* line 108, ../sass/base/_base.scss */
 .to-top-button img {
   width: 100%;
   height: 100%;
 }
 
-/* line 111, ../sass/base/_base.scss */
+/* line 114, ../sass/base/_base.scss */
 .svg-icon, .sm-icon {
   color: #e6e6e6;
   font-weight: bolder;
@@ -119,7 +121,7 @@ h3.sub-title {
   width: 20px;
 }
 
-/* line 118, ../sass/base/_base.scss */
+/* line 121, ../sass/base/_base.scss */
 .primary-button {
   padding: 7px 15px;
   border: none;
@@ -133,13 +135,13 @@ h3.sub-title {
   cursor: pointer;
 }
 
-/* line 131, ../sass/base/_base.scss */
+/* line 134, ../sass/base/_base.scss */
 img.lazy-load {
   transform: translateY(-50%);
   transition: all 500ms;
 }
 
-/* line 138, ../sass/base/_base.scss */
+/* line 141, ../sass/base/_base.scss */
 .lazy-fade {
   transform: translateY(0);
   opacity: 1;
@@ -7903,20 +7905,9 @@ readers do not read off random characters that represent icons */
   margin: 0 auto;
 }
 
-/* line 3, ../sass/modules/_testimonials.scss */
-#reviews .reviews {
-  border-bottom: 2px solid #f4f4f4;
-}
-/* line 6, ../sass/modules/_testimonials.scss */
-#reviews .reviews .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 11, ../sass/modules/_testimonials.scss */
+/* line 8, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card {
   height: 400px;
-  max-width: 50%;
   border-radius: 5px;
   background-color: rgba(121, 121, 121, 0.199);
   box-shadow: 0px 10px 20px -12px #191919;
@@ -7925,7 +7916,7 @@ readers do not read off random characters that represent icons */
   align-items: center;
   padding: 25px 30px;
 }
-/* line 23, ../sass/modules/_testimonials.scss */
+/* line 18, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .profile-img {
   border-radius: 7px;
   width: 40%;
@@ -7936,22 +7927,23 @@ readers do not read off random characters that represent icons */
   justify-content: center;
   align-items: center;
 }
-/* line 34, ../sass/modules/_testimonials.scss */
+/* line 29, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .profile-img img {
   height: 100%;
+  width: auto;
 }
-/* line 40, ../sass/modules/_testimonials.scss */
+/* line 35, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content {
   width: 60%;
   padding: 20px 30px;
 }
-/* line 50, ../sass/modules/_testimonials.scss */
+/* line 45, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content .review-text:before {
   content: "\f10d";
   font-size: 40px;
   color: rgba(255, 255, 255, 0.548);
 }
-/* line 55, ../sass/modules/_testimonials.scss */
+/* line 50, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content .review-text:after {
   content: "\f10e";
   font-size: 40px;
@@ -7959,27 +7951,127 @@ readers do not read off random characters that represent icons */
   left: calc(100% - 30px);
   color: rgba(255, 255, 255, 0.548);
 }
-/* line 63, ../sass/modules/_testimonials.scss */
+/* line 58, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content .review-text p {
   font-family: 'Montserrat Alternates', sans-serif;
   line-height: 26px;
   padding-top: 10px;
 }
-/* line 69, ../sass/modules/_testimonials.scss */
+/* line 64, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content .review-text p a {
   color: #e7992a;
+  text-transform: lowercase;
 }
-/* line 72, ../sass/modules/_testimonials.scss */
+/* line 68, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content .review-text p a:hover {
   text-decoration: underline;
 }
-/* line 81, ../sass/modules/_testimonials.scss */
+/* line 77, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content .profile-desc {
   margin-top: 30px;
 }
-/* line 85, ../sass/modules/_testimonials.scss */
+/* line 81, ../sass/modules/_testimonials.scss */
 #reviews .reviews .wrapper .card .review-content .profile-desc h4, #reviews .reviews .wrapper .card .review-content .profile-desc h5 {
   text-align: center;
   margin: 5px 0;
   text-transform: capitalize;
+}
+/* line 99, ../sass/modules/_testimonials.scss */
+#reviews .button-container {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* line 105, ../sass/modules/_testimonials.scss */
+#reviews .button-container button {
+  margin: 5px;
+}
+
+/* line 3, ../sass/modules/_contact.scss */
+#contact .wrapper {
+  display: flex;
+  padding: 0 50px;
+  margin: 50px 0;
+}
+/* line 8, ../sass/modules/_contact.scss */
+#contact .wrapper .map {
+  width: 100%;
+  padding: 20px;
+}
+/* line 13, ../sass/modules/_contact.scss */
+#contact .wrapper .map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+/* line 20, ../sass/modules/_contact.scss */
+#contact .wrapper form {
+  width: 100%;
+  padding: 30px;
+}
+/* line 24, ../sass/modules/_contact.scss */
+#contact .wrapper form input, #contact .wrapper form textarea {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  padding: 0 5px;
+  color: #f4f4f4;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #f4f4f4;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+/* line 37, ../sass/modules/_contact.scss */
+#contact .wrapper form input::placeholder, #contact .wrapper form textarea::placeholder {
+  color: #f4f4f4;
+}
+/* line 42, ../sass/modules/_contact.scss */
+#contact .wrapper form textarea {
+  resize: none;
+  height: 100px;
+  margin-top: 15px;
+}
+
+/* line 1, ../sass/modules/_footer.scss */
+#footer {
+  height: 100px;
+  width: calc(100% + 160px);
+  margin-left: -80px;
+  background-color: #161515;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 11, ../sass/modules/_footer.scss */
+#footer .copyright {
+  padding: 0 20px;
+}
+/* line 15, ../sass/modules/_footer.scss */
+#footer .social-links {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* line 21, ../sass/modules/_footer.scss */
+#footer .social-links .icon-container {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 32, ../sass/modules/_footer.scss */
+#footer .social-links .icon-container h5 {
+  margin: 0 10px;
+}
+/* line 36, ../sass/modules/_footer.scss */
+#footer .social-links .icon-container a, #footer .social-links .icon-container img {
+  height: 100%;
+  width: 100%;
 }

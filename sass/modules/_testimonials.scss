@@ -1,21 +1,16 @@
 #reviews{
 
     .reviews{
-        border-bottom: 2px solid $text-color;
+        // border-bottom: 2px solid $text-color;
 
         .wrapper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
+                        
             .card{
                 height: 400px;
-                max-width: 50%;
                 border-radius: 5px;
                 background-color: rgba(121, 121, 121, 0.199);
                 box-shadow: 0px 10px 20px -12px #191919;
                 display: flex;
-                // flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
                 padding: 25px 30px;
@@ -32,8 +27,8 @@
                     align-items: center;
 
                     img{
-                        // display: none;
                         height: 100%;
+                        width: auto;
                     }
                 }
                 
@@ -68,6 +63,7 @@
                             
                             a{
                                 color: $button-color;
+                                text-transform: lowercase;
                                 
                                 &:hover{
                                     text-decoration: underline;
@@ -93,6 +89,21 @@
                 
                 }
             }
+        }
+    }
+
+    // .links{
+    //     margin-top: 30px;
+    // }
+
+    .button-container{
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button{
+            margin: 5px;
         }
     }
 }
