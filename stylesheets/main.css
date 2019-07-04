@@ -148,6 +148,23 @@ img.lazy-load {
   transition: all 500ms;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 150, ../sass/base/_base.scss */
+  .body {
+    padding: 0;
+  }
+
+  /* line 154, ../sass/base/_base.scss */
+  .card {
+    max-width: 280px;
+  }
+
+  /* line 158, ../sass/base/_base.scss */
+  h1.title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -7490,7 +7507,7 @@ readers do not read off random characters that represent icons */
 }
 
 /* line 1, ../sass/modules/_navbar.scss */
-#navbar {
+.navbar {
   width: calc(100% + 160px);
   margin-left: -80px;
   background: #292929;
@@ -7498,7 +7515,7 @@ readers do not read off random characters that represent icons */
   justify-content: center;
 }
 /* line 9, ../sass/modules/_navbar.scss */
-#navbar ul {
+.navbar ul {
   list-style: none;
   width: 80%;
   height: 100%;
@@ -7509,16 +7526,16 @@ readers do not read off random characters that represent icons */
   padding: 0 80px;
 }
 /* line 20, ../sass/modules/_navbar.scss */
-#navbar ul li {
+.navbar ul li {
   margin: auto;
   padding: 15px;
 }
 /* line 24, ../sass/modules/_navbar.scss */
-#navbar ul li.active {
+.navbar ul li.active {
   border-bottom: 3px solid #e7992a;
 }
 /* line 30, ../sass/modules/_navbar.scss */
-#navbar ul li a:hover {
+.navbar ul li a:hover {
   color: #dcddde;
 }
 
@@ -7547,6 +7564,12 @@ readers do not read off random characters that represent icons */
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 64, ../sass/modules/_navbar.scss */
+  #navbar {
+    display: none;
+  }
+}
 /* line 1, ../sass/modules/_header.scss */
 #header {
   position: absolute;
@@ -7579,11 +7602,17 @@ readers do not read off random characters that represent icons */
   margin: 0 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 36, ../sass/modules/_header.scss */
+  #header {
+    display: none;
+  }
+}
 /* line 2, ../sass/modules/_tours.scss */
 #tours .wrapper {
-  padding: 0 20px;
+  padding: 0 50px;
 }
-/* line 15, ../sass/modules/_tours.scss */
+/* line 5, ../sass/modules/_tours.scss */
 #tours .wrapper .card {
   height: 320px;
   display: flex;
@@ -7591,15 +7620,15 @@ readers do not read off random characters that represent icons */
   background-position: center;
   align-items: flex-end;
 }
-/* line 28, ../sass/modules/_tours.scss */
+/* line 18, ../sass/modules/_tours.scss */
 #tours .wrapper .card .card-desc-after {
   height: 100%;
 }
-/* line 32, ../sass/modules/_tours.scss */
+/* line 22, ../sass/modules/_tours.scss */
 #tours .wrapper .card .card-desc-active {
   height: 20%;
 }
-/* line 36, ../sass/modules/_tours.scss */
+/* line 26, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc {
   width: 100%;
   display: flex;
@@ -7615,21 +7644,21 @@ readers do not read off random characters that represent icons */
   transition-delay: .2s;
   transition-timing-function: ease-in-out;
 }
-/* line 53, ../sass/modules/_tours.scss */
+/* line 43, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc h3, #tours .wrapper .card span.card-desc p {
   text-align: center;
   text-transform: capitalize;
 }
-/* line 58, ../sass/modules/_tours.scss */
+/* line 48, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc h3 {
   margin: 0 0 20px 0;
 }
-/* line 63, ../sass/modules/_tours.scss */
+/* line 53, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc p {
   font-size: 15px;
   margin: 10px 0;
 }
-/* line 68, ../sass/modules/_tours.scss */
+/* line 58, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc .icon-container {
   width: 35px;
   height: 35px;
@@ -7637,22 +7666,22 @@ readers do not read off random characters that represent icons */
   margin: 15px 0;
   background: #f4f4f4;
 }
-/* line 75, ../sass/modules/_tours.scss */
+/* line 65, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc .icon-container a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 80, ../sass/modules/_tours.scss */
+/* line 70, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc .icon-container a img {
   height: 100%;
   width: 100%;
 }
-/* line 86, ../sass/modules/_tours.scss */
+/* line 76, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc .icon-container:hover {
   background: #ddd;
 }
-/* line 93, ../sass/modules/_tours.scss */
+/* line 83, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc span.up-icon i {
   cursor: pointer;
   font-size: 20px;
@@ -7661,11 +7690,11 @@ readers do not read off random characters that represent icons */
   transition-delay: .2s;
   transition-timing-function: ease-in-out;
 }
-/* line 103, ../sass/modules/_tours.scss */
+/* line 93, ../sass/modules/_tours.scss */
 #tours .wrapper .card span.card-desc span.up-icon i.i-after {
   transform: rotate(180deg);
 }
-/* line 112, ../sass/modules/_tours.scss */
+/* line 102, ../sass/modules/_tours.scss */
 #tours .wrapper .owl-carousel .owl-nav button.owl-next, #tours .wrapper .owl-carousel .owl-nav button.owl-prev {
   background: #e7992a;
   color: transparent;
@@ -7677,7 +7706,7 @@ readers do not read off random characters that represent icons */
   justify-content: center;
   align-items: center;
 }
-/* line 128, ../sass/modules/_tours.scss */
+/* line 118, ../sass/modules/_tours.scss */
 #tours .wrapper .owl-carousel .owl-nav button.owl-next::before {
   content: "\f061";
   position: relative;
@@ -7685,7 +7714,7 @@ readers do not read off random characters that represent icons */
   padding: 0;
   font-size: 30px;
 }
-/* line 139, ../sass/modules/_tours.scss */
+/* line 129, ../sass/modules/_tours.scss */
 #tours .wrapper .owl-carousel .owl-nav button.owl-prev::before {
   content: "\f060";
   position: relative;
@@ -7693,7 +7722,7 @@ readers do not read off random characters that represent icons */
   padding: 0;
   font-size: 30px;
 }
-/* line 150, ../sass/modules/_tours.scss */
+/* line 140, ../sass/modules/_tours.scss */
 #tours .wrapper .owl-carousel .owl-nav {
   position: absolute;
   top: 0;
@@ -7705,15 +7734,21 @@ readers do not read off random characters that represent icons */
   height: 100%;
   z-index: -1;
 }
-/* line 163, ../sass/modules/_tours.scss */
+/* line 153, ../sass/modules/_tours.scss */
 #tours .wrapper .owl-carousel .owl-dots {
   display: none;
 }
-/* line 169, ../sass/modules/_tours.scss */
+/* line 159, ../sass/modules/_tours.scss */
 #tours .wrapper .owl-carousel .owl-stage-outer .owl-stage {
   margin: 30px 0;
 }
 
+@media only screen and (max-width: 1000px) {
+  /* line 172, ../sass/modules/_tours.scss */
+  #tours .wrapper .owl-carousel .owl-nav button.owl-next, #tours .wrapper .owl-carousel .owl-nav button.owl-prev {
+    display: none;
+  }
+}
 /* line 5, ../sass/modules/_topDestinations.scss */
 #top-destination .card-container .card {
   width: 250px;
@@ -7887,7 +7922,7 @@ readers do not read off random characters that represent icons */
   justify-content: center;
   overflow: hidden;
   border-radius: 3px;
-  background: #0d3f67;
+  background: #292929;
 }
 /* line 22, ../sass/modules/_gallery.scss */
 #gallery .wrapper .img-container img {
@@ -8034,6 +8069,13 @@ readers do not read off random characters that represent icons */
   margin-top: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 54, ../sass/modules/_contact.scss */
+  #contact .wrapper {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 /* line 1, ../sass/modules/_footer.scss */
 #footer {
   height: 100px;

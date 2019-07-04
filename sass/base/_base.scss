@@ -144,3 +144,21 @@ img.lazy-load{
 
     transition: all 500ms;
 }
+
+@media only screen and (max-width:768px){
+
+    .body{
+        padding: 0;
+    }
+
+    .card{
+        max-width: 280px;
+    }
+
+    h1.title{
+        font-size: 36px;
+        text-align: center;
+    }
+
+
+}

@@ -1,20 +1,10 @@
 #tours{
     .wrapper{
-        padding: 0 20px;
-
-        // .slide{
-        //     .tour-card:nth-child(1){
-        //         background-image: url(D:/work/Travel/images/nepal-everest-1.jpg);
-        //     }
-        // }
-        
-        // .card:nth-child(2){
-        //     background-image: url(D:/work/Travel/images/mardi-Himal-trek.jpg);
-        // }
+        padding: 0 50px;
 
         .card{
             height: 320px;
-            //width: 320px;
+            // max-width: 280px;
             display: flex;
             background-size: cover;
             background-position: center;
@@ -172,4 +162,17 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 1000px){
+    #tours{
+
+        .wrapper{
+
+            .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+                display: none;
+            }
+            
+        }
+    }
 }

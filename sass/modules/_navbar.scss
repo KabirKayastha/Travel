@@ -1,4 +1,4 @@
-#navbar{
+.navbar{
     width: calc(100% + 160px);
     margin-left: -80px;
     // background: rgb(32, 32, 32);
@@ -57,4 +57,12 @@
     img{
         height: 100%;
     }
+}
+
+@media only screen and (max-width:768px){
+
+    #navbar{
+        display: none;
+    }
+
 }

@@ -11,10 +11,10 @@ $('#tours .owl-carousel').owlCarousel({
             items:1
         },
         600:{
-            items:1
+            items:2
         },
         1000:{
-            items:3
+            items:2
         },
         1050:{
             items:3
