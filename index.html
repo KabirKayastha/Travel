@@ -23,8 +23,8 @@
         </ul>
 
         <ul class="right-header">
-            <li><i class="fas fa-plane sm-icon"></i> <a href="#">flights</a></li>
-            <li><i class="fas fa-bus sm-icon"></i> <a href="#">transport</a></li>
+            <!-- <li><i class="fas fa-plane sm-icon"></i> <a href="#">flights</a></li>
+            <li><i class="fas fa-bus sm-icon"></i> <a href="#">transport</a></li> -->
             <li><a href="#" target="_BLANK"><button class="primary-button"> FAQ</button></a></li>
             <li><a href="#" target="_BLANK"><button class="primary-button"> BOOK</button></a></li>
         </ul>
@@ -60,6 +60,11 @@
         <!-- logo container -->
         <div class="logo-container">
             <img src="./images/smalllogo.png" alt="logo">
+
+            <span id="ham-menu-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </span>
         </div>
         <!-- /logo container -->
 
@@ -71,7 +76,7 @@
                         Home
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#top-destination">
                         Destinations
                     </a>
@@ -91,7 +96,7 @@
                         Gallery
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#contact">
                         Contact
                     </a>
@@ -99,6 +104,7 @@
             </ul>
         </nav>
         <!-- /navbar -->
+        
 
         <!-- top Destination -->
         <div id="top-destination">
@@ -501,7 +507,7 @@
 
                 <div class="wrapper">
                     <div class="review-slide owl-carousel owl-theme">
-                        <div class="card">
+                        <div class="card review-container">
                             <div class="profile-img">
                                 <img alt="./images/blue-eyes-237438_1920.jpg" class="lazy-load">
                             </div>
@@ -602,7 +608,7 @@
         <div id="contact">
             <h1 class="title">Contact us</h1>
             <div class="contact-desc">
-                <p style="text-align: center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis laborum libero expedita incidunt temporibus sequi, a officia enim commodi voluptatem iure molestiae dignissimos cumque asperiores fuga quod fugit ullam pariatur illum rerum quia! Corporis voluptatum a delectus ipsum vitae officia reprehenderit! Laborum dolor nesciunt nostrum eos repellat error perferendis accusamus.</p>
+                <p style="text-align: center; padding: 0 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis laborum libero expedita incidunt temporibus sequi, a officia enim commodi voluptatem iure molestiae dignissimos cumque asperiores fuga quod fugit ullam pariatur illum rerum quia! Corporis voluptatum a delectus ipsum vitae officia reprehenderit! Laborum dolor nesciunt nostrum eos repellat error perferendis accusamus.</p>
             </div>
 
             <div class="wrapper">
@@ -613,10 +619,12 @@
 
                 <form action="#">
                     <h3>Message Us</h3>
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
-                    <input type="number" placeholder="Contact No.">
+                    <input class="input" type="text" placeholder="Full Name">
+                    <input class="input" type="email" placeholder="Email Address">
+                    <input class="input" type="number" placeholder="Contact No.">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Your Enquiries"></textarea>
+
+                    <input type="submit" value="Send" class="primary-button">
                 </form>
             </div>                   
 
@@ -667,6 +675,7 @@
     <script src="js/owlCarousel/reviews-owlCarousel.js"></script>
     <script src="js/_parallax.js"></script>
     <script src="js/affix.js"></script>
+    <script src="js/_navbar.js"></script>
     <script src="js/lazyload.js"></script>
 </body>
 </html>

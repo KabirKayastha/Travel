@@ -44,7 +44,7 @@ a {
 
 /* line 47, ../sass/base/_base.scss */
 .card {
-  margin: 20px;
+  margin: 20px 10px;
   border-radius: 10px;
   background: #0d3f67;
   box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
@@ -7406,9 +7406,9 @@ readers do not read off random characters that represent icons */
 /* line 8, ../sass/modules/_parallax.scss */
 .mobile-parallax {
   width: 100%;
-  min-height: 120vh;
+  min-height: 75vh;
   height: auto;
-  background-image: url(D:/work/Travel/images/parallax/complete-illustration-picture-mparallax.jpg);
+  background-image: url(D:/work/Travel/images/parallax/complete-illustration-picture-mparallax0.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7510,7 +7510,6 @@ readers do not read off random characters that represent icons */
 .navbar {
   width: calc(100% + 160px);
   margin-left: -80px;
-  background: #292929;
   display: flex;
   justify-content: center;
 }
@@ -7563,10 +7562,77 @@ readers do not read off random characters that represent icons */
 .logo-container img {
   height: 100%;
 }
+/* line 61, ../sass/modules/_navbar.scss */
+.logo-container #ham-menu-btn {
+  display: none;
+}
 
-@media only screen and (max-width: 768px) {
-  /* line 64, ../sass/modules/_navbar.scss */
-  #navbar {
+@media only screen and (max-width: 999px) {
+  /* line 68, ../sass/modules/_navbar.scss */
+  .navbar {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;
+    transition: height 800ms ease-in-out;
+  }
+  /* line 77, ../sass/modules/_navbar.scss */
+  .navbar ul {
+    width: 100%;
+    background: #222;
+    flex-direction: column;
+    padding: 0;
+  }
+  /* line 83, ../sass/modules/_navbar.scss */
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+  /* line 89, ../sass/modules/_navbar.scss */
+  .navbar ul li.active {
+    background: #111;
+    border: none;
+  }
+
+  /* line 97, ../sass/modules/_navbar.scss */
+  .navbar-toggled {
+    height: 400px;
+  }
+
+  /* line 101, ../sass/modules/_navbar.scss */
+  .logo-container {
+    justify-content: space-evenly;
+  }
+  /* line 105, ../sass/modules/_navbar.scss */
+  .logo-container #ham-menu-btn {
+    display: block;
+    border-radius: 5px;
+    border: 2px solid #434343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  /* line 115, ../sass/modules/_navbar.scss */
+  .logo-container #ham-menu-btn:hover {
+    background-color: #222;
+  }
+  /* line 119, ../sass/modules/_navbar.scss */
+  .logo-container #ham-menu-btn i {
+    font-size: 30px;
+  }
+  /* line 123, ../sass/modules/_navbar.scss */
+  .logo-container #ham-menu-btn .fa-times {
+    display: none;
+  }
+  /* line 127, ../sass/modules/_navbar.scss */
+  .logo-container #ham-menu-btn .times-clicked {
+    display: block;
+  }
+  /* line 131, ../sass/modules/_navbar.scss */
+  .logo-container #ham-menu-btn .bars-clicked {
     display: none;
   }
 }
@@ -7578,34 +7644,47 @@ readers do not read off random characters that represent icons */
   letter-spacing: 1.5px;
   background: rgba(37, 37, 37, 0.315);
   z-index: 1;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* line 12, ../sass/modules/_header.scss */
+/* line 13, ../sass/modules/_header.scss */
 #header .sm-icon {
   color: #191919;
 }
-/* line 16, ../sass/modules/_header.scss */
+/* line 17, ../sass/modules/_header.scss */
 #header ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
-/* line 23, ../sass/modules/_header.scss */
+/* line 26, ../sass/modules/_header.scss */
 #header ul.right-header {
   text-transform: capitalize;
 }
-/* line 27, ../sass/modules/_header.scss */
+/* line 30, ../sass/modules/_header.scss */
 #header ul li {
   margin: 0 10px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 36, ../sass/modules/_header.scss */
+  /* line 39, ../sass/modules/_header.scss */
   #header {
-    display: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 44, ../sass/modules/_header.scss */
+  #header .left-header {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 49, ../sass/modules/_header.scss */
+  #header li {
+    padding: 5px 0;
   }
 }
 /* line 2, ../sass/modules/_tours.scss */
@@ -8023,6 +8102,29 @@ readers do not read off random characters that represent icons */
   margin: 5px;
 }
 
+@media only screen and (max-width: 999px) {
+  /* line 120, ../sass/modules/_testimonials.scss */
+  #reviews .reviews .wrapper .card {
+    min-width: 80%;
+    height: auto;
+    margin: 0 auto 30px auto;
+    flex-direction: column;
+  }
+  /* line 127, ../sass/modules/_testimonials.scss */
+  #reviews .reviews .wrapper .card .profile-img, #reviews .reviews .wrapper .card .review-content {
+    width: 100%;
+  }
+  /* line 131, ../sass/modules/_testimonials.scss */
+  #reviews .reviews .wrapper .card .profile-img {
+    min-height: 200px;
+    height: 200px;
+    background-color: transparent;
+  }
+  /* line 137, ../sass/modules/_testimonials.scss */
+  #reviews .reviews .wrapper .card .review-content {
+    padding-bottom: 0;
+  }
+}
 /* line 3, ../sass/modules/_contact.scss */
 #contact .wrapper {
   display: flex;
@@ -8046,7 +8148,7 @@ readers do not read off random characters that represent icons */
   padding: 30px;
 }
 /* line 24, ../sass/modules/_contact.scss */
-#contact .wrapper form input, #contact .wrapper form textarea {
+#contact .wrapper form .input, #contact .wrapper form textarea {
   display: block;
   width: 100%;
   height: 50px;
@@ -8059,7 +8161,7 @@ readers do not read off random characters that represent icons */
   font-family: 'Montserrat Alternates', sans-serif;
 }
 /* line 37, ../sass/modules/_contact.scss */
-#contact .wrapper form input::placeholder, #contact .wrapper form textarea::placeholder {
+#contact .wrapper form .input::placeholder, #contact .wrapper form textarea::placeholder {
   color: #f4f4f4;
 }
 /* line 42, ../sass/modules/_contact.scss */
@@ -8068,12 +8170,21 @@ readers do not read off random characters that represent icons */
   height: 100px;
   margin-top: 15px;
 }
+/* line 48, ../sass/modules/_contact.scss */
+#contact .wrapper form input[type=submit] {
+  margin: 10px 0;
+}
 
 @media only screen and (max-width: 768px) {
-  /* line 54, ../sass/modules/_contact.scss */
+  /* line 58, ../sass/modules/_contact.scss */
   #contact .wrapper {
     flex-wrap: wrap;
     padding: 0;
+  }
+  /* line 63, ../sass/modules/_contact.scss */
+  #contact .wrapper .map {
+    min-height: 400px;
+    height: 400px;
   }
 }
 /* line 1, ../sass/modules/_footer.scss */

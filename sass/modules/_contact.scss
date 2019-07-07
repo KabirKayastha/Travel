@@ -21,7 +21,7 @@
             width: 100%;
             padding: 30px;
 
-            input, textarea{
+            .input, textarea{
                 display: block;
                 // outline: transparent;
                 width: 100%;
@@ -44,6 +44,10 @@
                 height: 100px;
                 margin-top: 15px;
             }
+
+            input[type=submit]{
+                margin: 10px 0;
+            }
         }
     }
 }
@@ -55,6 +59,11 @@
 
             flex-wrap: wrap;
             padding: 0;
+
+            .map{
+                min-height: 400px;
+                height: 400px;
+            }
         }
     }
 }

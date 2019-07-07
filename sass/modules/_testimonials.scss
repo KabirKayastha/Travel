@@ -107,3 +107,40 @@
         }
     }
 }
+
+@media only screen and (max-width:999px){
+
+    #reviews{
+
+        .reviews{
+
+            .wrapper{
+
+                
+                .card{
+                    min-width: 80%;
+                    height: auto;
+                    margin: 0 auto 30px auto;
+                    
+                    flex-direction: column;
+
+                    .profile-img, .review-content{
+                        width: 100%;
+                    }
+
+                    .profile-img{
+                        min-height: 200px;
+                        height: 200px;
+                        background-color: transparent;
+                    }
+
+                    .review-content{
+                        padding-bottom: 0;
+                    }
+        
+                }
+
+            }
+        }
+    }
+}
