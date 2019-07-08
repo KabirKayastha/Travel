@@ -1,3 +1,4 @@
+//non-responsive
 var target = $('#navbar')
 target.after('<div class="affix" id="affix"></div>')
 
@@ -16,6 +17,29 @@ if (element !== null) {
     } else {
       affix.css('display', 'none')
       target.css('visibility', 'visible')
+    }
+  })
+}
+
+//responsive
+var respTarget = $('#resp-navbar')
+respTarget.after('<div class="resp-affix" id="respAffix"></div>')
+
+var respAffix = $('.resp-affix')
+respAffix.append(respTarget.clone(true))
+
+// Show affix on scroll.
+var respElement = document.getElementById('respAffix')
+if (respElement !== null) {
+  var respPosition = respTarget.position()
+  window.addEventListener('scroll', function () {
+    var respHeight = $(window).scrollTop()
+    if (respHeight > respPosition.top) {
+      respTarget.css('visibility', 'hidden')
+      respAffix.css('display', 'block')
+    } else {
+      respAffix.css('display', 'none')
+      respTarget.css('visibility', 'visible')
     }
   })
 }

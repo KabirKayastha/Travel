@@ -2,7 +2,7 @@
     width: calc(100% + 160px);
     margin-left: -80px;
     // background: rgb(32, 32, 32);
-    // background: #292929;
+    background: #292929;
     display: flex;
     justify-content: center;
 
@@ -45,6 +45,10 @@
     box-shadow: 0px 5px 15px -3px $shadow;
 }
 
+#resp-navbar{
+    display: none;
+}
+
 
 .logo-container{
     width: calc(100% + 160px);
@@ -64,9 +68,12 @@
 }
 
 @media only screen and (max-width:999px){
+    .logo-container{
+        display: none;
+    }
 
     .navbar{
-        // display: none;
+        display: none;
         height: 0;
         overflow: hidden;
         width: 100%;
@@ -134,4 +141,97 @@
         }
     }
 
+    #resp-navbar{
+        display: block;
+        background: #292929;
+
+    }
+
+    .resp-navbar{
+        // z-index: 99;
+        overflow-x: hidden;
+
+        .nav-visible{
+            // box-sizing: ;
+            // padding: 0px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            max-height: 100px;
+            height: 55px;  
+            // margin-top: 30px;
+            
+            img, #ham-menu-btn{
+                height: 100%;
+            }
+
+            #ham-menu-btn{
+                border-radius: 5px;
+                border: 2px solid #434343;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 15px;
+                cursor: pointer;
+    
+                &:hover{
+                    background-color: #222;
+                }
+    
+                i{
+                    font-size: 30px;
+                }
+    
+                .fa-times{
+                    display: none;
+                }
+    
+                .times-clicked{
+                    display: block;
+                }
+    
+                .bars-clicked{
+                    display: none;
+                }
+            }
+        }
+
+        ul{
+            // display: none;
+            width: 0%;
+            position: absolute;
+            background: rgba(68, 68, 68, 0.85);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            z-index: 9;
+            overflow: hidden;
+
+            // transform: translateX(100%);
+            transition: width .5s ease-in-out;
+            li{
+                text-align: center;
+                padding: 15px 0;                
+            }
+        }
+
+        .nav-shown{
+            width: 100%;
+            // transform: translateX(0);
+        }
+    }
+
+    .resp-affix {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        display: none;
+        padding: 10px 0;
+        background: #292929;
+        box-shadow: 0px 5px 15px -3px $shadow;
+    }
+    
 }
