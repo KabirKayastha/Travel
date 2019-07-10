@@ -38,4 +38,53 @@
             }
         }
     }
+
+    #resp-header{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:999px){
+    #footer{
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+        height: auto;
+        flex-direction: column-reverse;
+
+        .social-links{
+            width: 100%;
+            border-bottom: 2px solid #444;
+            padding-bottom: 20px;
+        }
+
+        .copyright{
+            text-align: center;
+            line-height: 24px;
+            padding-top: 20px;
+
+            h5{
+                margin: 5px 0;
+            }
+        }
+
+        #resp-header{
+            display: block;
+        }
+
+        .resp-header{
+
+            ul{
+                list-style: none;
+                // width: 100%;
+                padding: 0 0 15px 0;
+                border-bottom: 2px solid #444;
+
+                li{
+                    padding: 5px;
+                    // text-align: center;
+                }
+            }
+        }
+    }
 }

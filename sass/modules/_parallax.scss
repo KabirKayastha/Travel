@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap');
+
 .parallax{
     min-height: 140vh;
     height: auto;
@@ -6,7 +8,7 @@
 }
 
 .mobile-parallax{
-    // display: none;
+    display: none;
     width: 100%;
     min-height: 75vh;
     height: auto;
@@ -43,18 +45,23 @@
 }
 
 .layer-text h1{
-    background: linear-gradient(to bottom,rgb(255, 0, 0), rgb(184, 8, 8), rgb(105, 2, 2),rgba(43, 0, 0, 0.5));
+    background: linear-gradient(to top right,rgb(0, 17, 255), rgb(26, 8, 184), rgb(207, 28, 4),rgba(226, 8, 8, 0.651));
+    // background: linear-gradient(to bottom,rgb(255, 0, 0), rgb(184, 8, 8), rgb(105, 2, 2),rgba(43, 0, 0, 0.5));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-family: 'Luna';
+    // font-family: 'Luna';
+    font-family: 'Macondo Swash Caps', cursive;
     position: relative;
     top: -100px;
     -webkit-text-size-adjust: auto;
-    font-size: 400%;
+    font-size: 500%;
     text-transform: uppercase;
     letter-spacing: 15px;
     margin: auto;
+    // -webkit-text-stroke-width: .5px;
+    // -webkit-text-stroke-color: rgba(34, 34, 34, 0.534);
 }
 
 // .layer-twoAnim{
@@ -87,11 +94,29 @@
 @media(max-width: 1000px){
 
     .parallax{
-        display: none;
+        // display: none;
+        min-height: 140vh;
+        width: 100%;
     }
 
-    .mobile-parallax{
-        display: block;
+    // .mobile-parallax{
+    //     // display: block;
+    // }
+
+    .layer-text h1{
+        background: linear-gradient(to bottom right,rgb(0, 17, 255), rgb(26, 8, 184), rgb(207, 28, 4),rgba(226, 8, 8, 0.651));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        // font-family: 'Luna';
+        position: relative;
+        top: -100px;
+        -webkit-text-size-adjust: auto;
+        font-size: 400%;
+        text-transform: capitalize;
+        letter-spacing: 15px;
+        margin: auto;
     }
 }
 

@@ -8,13 +8,15 @@ $('#tours .owl-carousel').owlCarousel({
     autoplayHoverPause: true,
     responsive:{
         0:{
-            items:1
+            items:1,
+            autoWidth: true,
         },
         600:{
-            items:2
+            items:2,
+            autoWidth: true,
         },
         1000:{
-            items:2
+            items:3
         },
         1050:{
             items:3
