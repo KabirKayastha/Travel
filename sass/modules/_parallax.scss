@@ -12,7 +12,7 @@
     width: 100%;
     min-height: 75vh;
     height: auto;
-    background-image: url(D:/work/Travel/images/parallax/complete-illustration-picture-mparallax0.jpg);
+    background-image: url(../../images/parallax/complete-illustration-picture-mparallax0.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,13 +32,14 @@
     align-content: center;
 }
 
-.layer-bg{
-    background-image: url(D:/work/Travel/images/parallax/background2withClouds.png);
-}
+// .layer-bg{
+//     background-image: url(./../../images/parallax/background2withClouds.png);
+// }
 
-.layer-one{
-    background-image: url(D:/work/Travel/images/parallax/mid-mountains1.png);
-}
+// .layer-one{
+//     // background-image: url(../../images/parallax/mid-mountains1.png);
+//     background-image: url(D:/work/Travel/images/parallax/mid-mountains1.png);
+// }
 
 .layer-text{
     text-align: center;
@@ -68,17 +69,20 @@
 //     background-image: url(D:/work/Travel/images/background2withClouds.png);
 // }
 
-.layer-two{
-    background-image: url(D:/work/Travel/images/parallax/cloudsLayer.png);
-}
+// .layer-two{
+//     // background-image: url(D:/work/Travel/images/parallax/cloudsLayer.png);
+//     background-image: url(../../images/parallax/cloudsLayer.png);
+// }
 
-.layer-three{
-    background-image: url(D:/work/Travel/images/parallax/frontmost1.png);
-}
+// .layer-three{
+//     // background-image: url(D:/work/Travel/images/parallax/frontmost1.png);
+//     background-image: url(../../images/parallax/frontmost1.png);
+// }
 
-.layer-four{
-    background-image: url(D:/work/Travel/images/parallax/blender292929.png);
-}
+// .layer-four{
+//     // background-image: url(D:/work/Travel/images/parallax/blender292929.png);
+//     background-image: url(../../images/parallax/blender292929.png);
+// }
 
 @media(min-width: 1000px){
 

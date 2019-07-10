@@ -7410,7 +7410,7 @@ readers do not read off random characters that represent icons */
   width: 100%;
   min-height: 75vh;
   height: auto;
-  background-image: url(D:/work/Travel/images/parallax/complete-illustration-picture-mparallax0.jpg);
+  background-image: url(../../images/parallax/complete-illustration-picture-mparallax0.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7431,22 +7431,12 @@ readers do not read off random characters that represent icons */
   align-content: center;
 }
 
-/* line 35, ../sass/modules/_parallax.scss */
-.layer-bg {
-  background-image: url(D:/work/Travel/images/parallax/background2withClouds.png);
-}
-
-/* line 39, ../sass/modules/_parallax.scss */
-.layer-one {
-  background-image: url(D:/work/Travel/images/parallax/mid-mountains1.png);
-}
-
-/* line 43, ../sass/modules/_parallax.scss */
+/* line 44, ../sass/modules/_parallax.scss */
 .layer-text {
   text-align: center;
 }
 
-/* line 47, ../sass/modules/_parallax.scss */
+/* line 48, ../sass/modules/_parallax.scss */
 .layer-text h1 {
   background: linear-gradient(to top right, #0011ff, #1a08b8, #cf1c04, rgba(226, 8, 8, 0.651));
   background-clip: text;
@@ -7463,40 +7453,25 @@ readers do not read off random characters that represent icons */
   margin: auto;
 }
 
-/* line 71, ../sass/modules/_parallax.scss */
-.layer-two {
-  background-image: url(D:/work/Travel/images/parallax/cloudsLayer.png);
-}
-
-/* line 75, ../sass/modules/_parallax.scss */
-.layer-three {
-  background-image: url(D:/work/Travel/images/parallax/frontmost1.png);
-}
-
-/* line 79, ../sass/modules/_parallax.scss */
-.layer-four {
-  background-image: url(D:/work/Travel/images/parallax/blender292929.png);
-}
-
 @media (min-width: 1000px) {
-  /* line 85, ../sass/modules/_parallax.scss */
+  /* line 89, ../sass/modules/_parallax.scss */
   .parallax {
     display: block;
   }
 
-  /* line 89, ../sass/modules/_parallax.scss */
+  /* line 93, ../sass/modules/_parallax.scss */
   .mobile-parallax {
     display: none;
   }
 }
 @media (max-width: 1000px) {
-  /* line 96, ../sass/modules/_parallax.scss */
+  /* line 100, ../sass/modules/_parallax.scss */
   .parallax {
     min-height: 140vh;
     width: 100%;
   }
 
-  /* line 106, ../sass/modules/_parallax.scss */
+  /* line 110, ../sass/modules/_parallax.scss */
   .layer-text h1 {
     background: linear-gradient(to bottom right, #0011ff, #1a08b8, #cf1c04, rgba(226, 8, 8, 0.651));
     background-clip: text;
@@ -7512,7 +7487,7 @@ readers do not read off random characters that represent icons */
     margin: auto;
   }
 }
-/* line 123, ../sass/modules/_parallax.scss */
+/* line 127, ../sass/modules/_parallax.scss */
 .content {
   background-color: #754c24;
   min-height: 1000px;
