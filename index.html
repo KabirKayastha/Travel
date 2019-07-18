@@ -62,20 +62,19 @@
          
         <!-- logo container -->
         <div class="logo-container">
-            <img src="./images/smalllogo.png" alt="logo">
-
-            <!-- <span id="ham-menu-btn">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times"></i>
-            </span> -->
+            <img src="./images/smalllogo.png" alt="logo" id="logo">
         </div>
         <!-- /logo container -->
 
         <!-- navbar -->
         <nav id="navbar" class="navbar">
+            <!-- scrollspy-navmarker -->
+            <div id="navMarker" class="nav-marker"></div>
+            <!-- /scrollspy-navmarker -->
+
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#home">
                         Home
                     </a>
                 </li>
@@ -161,7 +160,7 @@
         
 
         <!-- top Destination -->
-        <div id="top-destination">
+        <div id="top-destination" class="section">
             <h1 class="title">top Destinations</h1>
 
             <div class="card-container">
@@ -203,7 +202,7 @@
         <!-- /top Destination -->
 
         <!-- favourite -->
-        <div id="favourite">
+        <div id="favourite" class="section">
             <h1 class="title">favourite Destinations</h1>
             <div class="card-container">
 
@@ -279,14 +278,14 @@
         <!-- /favourite -->
 
         <!-- tour -->
-        <div id="tours">
+        <div id="tours" class="section">
             <h1 class="title">Our Tours</h1>
             
             <div class="wrapper">
 
                 <div class="slide owl-carousel owl-theme">
                     
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/Goddess-Kumari-of-nepal.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/Goddess-Kumari-of-nepal.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -300,7 +299,7 @@
                         </span>
                     </div>
 
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/nepal-everest-1.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/nepal-everest-1.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -314,7 +313,7 @@
                         </span>
                     </div>
 
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/nepal-everest-1.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/nepal-everest-1.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -328,7 +327,7 @@
                         </span>
                     </div>
 
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/nepal-everest-1.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/nepal-everest-1.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -342,7 +341,7 @@
                         </span>
                     </div>
 
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/Goddess-Kumari-of-nepal.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/Goddess-Kumari-of-nepal.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -356,7 +355,7 @@
                         </span>
                     </div>
 
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/Goddess-Kumari-of-nepal.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/Goddess-Kumari-of-nepal.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -370,7 +369,7 @@
                         </span>
                     </div>
 
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/Goddess-Kumari-of-nepal.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/Goddess-Kumari-of-nepal.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -384,7 +383,7 @@
                         </span>
                     </div>
                     
-                    <div class="card tour-card" style="background-image: url(D:/work/Travel/images/nepal-everest-1.jpg)">
+                    <div class="card tour-card" style="background-image: url(images/nepal-everest-1.jpg)">
                         <!-- <img src="images/shutterstock_468651074.jpg" alt=""> -->
                         <span class="card-desc card-desc-active">
                             <span class="up-icon"></span>
@@ -405,7 +404,7 @@
         <!-- /tour -->
 
         <!-- packages -->
-        <div id="packages">
+        <div id="packages" class="section">
             <h1 class="title">Packages</h1>
 
             <div class="card-container">
@@ -517,7 +516,7 @@
         <!-- /packages -->
 
         <!-- gallery -->
-        <div id="gallery">
+        <div id="gallery" class="section">
             <h1 class="title">Gallery</h1>
             <div class="wrapper">
                 <div class="gallerySlider owl-carousel owl-theme">
@@ -659,7 +658,7 @@
         <!-- /testimonials and reviews -->
 
         <!-- contact -->
-        <div id="contact">
+        <div id="contact" class="section">
             <h1 class="title">Contact us</h1>
             <div class="contact-desc">
                 <p style="text-align: center; padding: 0 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis laborum libero expedita incidunt temporibus sequi, a officia enim commodi voluptatem iure molestiae dignissimos cumque asperiores fuga quod fugit ullam pariatur illum rerum quia! Corporis voluptatum a delectus ipsum vitae officia reprehenderit! Laborum dolor nesciunt nostrum eos repellat error perferendis accusamus.</p>
@@ -738,6 +737,7 @@
     <script src="js/owlCarousel/tours-owlCarousel.js"></script>
     <script src="js/owlCarousel/gallery-owlCarousel.js"></script>
     <script src="js/owlCarousel/reviews-owlCarousel.js"></script>
+    <script src="js/_scrollSpy.js"></script>
     <script src="js/_parallax.js"></script>
     <script src="js/affix.js"></script>
     <script src="js/_navbar.js"></script>
