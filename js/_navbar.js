@@ -10,20 +10,42 @@ $('#resp-navbar #ham-menu-btn').click(function(){
 // affix
 
 const navbar = document.querySelector('#navbar');
+const logo = document.querySelector('#logo');
+const sectionsAll = document.querySelectorAll('.section-all');
+let windowScroll = $(window).scrollTop();
+let navScroll = $("#navbar").scrollTop();
+
+// $(window).scroll(function(){
+//     // if(windowScroll > navScroll){
+//     //     console.log('blah');
+//     //     $(navbar).addClass('navbar-fixed');
+//     // }else
+//      if(windowScroll > navScroll){
+//         console.log("!blah");
+//         $(navbar).addClass('navbar-fixed');
+//     }
+    
+// });
 
 navbarAffixOptions = {
-    rootMargin: "0px 0px -90% 0px", 
-    threshold: 1
+    rootMargin: "-10% 0px -90% 0px", 
+    threshold: 0
 }
 
 let navbarAffixObserver = new IntersectionObserver(function(entries, navbarAffixObserver){
     entries.forEach(entry => {
         if(!entry.isIntersecting){
-            return;
+            navbar.classList.remove('navbar-fixed');
+            entry.target.style.paddingTop = "0px";
+        }else{
+            console.log(entry.target);
+            navbar.classList.add('navbar-fixed');
+            entry.target.style.paddingTop = navbar.clientHeight + "px";
         }
-        console.log(entry.target);
-        entry.target.classList.toggle('navbar-fixed');
     });  
 }, navbarAffixOptions);
 
-navbarAffixObserver.observe(navbar);
+sectionsAll.forEach(section => {
+    navbarAffixObserver.observe(section);
+});
+

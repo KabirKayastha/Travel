@@ -80,6 +80,11 @@ h3.sub-title {
 }
 
 /* line 81, ../sass/base/_base.scss */
+.section-all {
+  padding: 0 80px;
+}
+
+/* line 86, ../sass/base/_base.scss */
 .icon-container {
   display: flex;
   justify-content: center;
@@ -87,7 +92,7 @@ h3.sub-title {
   border-radius: 50%;
 }
 
-/* line 88, ../sass/base/_base.scss */
+/* line 93, ../sass/base/_base.scss */
 .to-top-button {
   width: 60px;
   height: 60px;
@@ -103,18 +108,18 @@ h3.sub-title {
   z-index: 99;
   cursor: pointer;
 }
-/* line 103, ../sass/base/_base.scss */
+/* line 108, ../sass/base/_base.scss */
 .to-top-button a {
   width: 100%;
   height: 100%;
 }
-/* line 108, ../sass/base/_base.scss */
+/* line 113, ../sass/base/_base.scss */
 .to-top-button img {
   width: 100%;
   height: 100%;
 }
 
-/* line 114, ../sass/base/_base.scss */
+/* line 119, ../sass/base/_base.scss */
 .svg-icon, .sm-icon {
   color: #e6e6e6;
   font-weight: bolder;
@@ -122,7 +127,7 @@ h3.sub-title {
   width: 20px;
 }
 
-/* line 121, ../sass/base/_base.scss */
+/* line 126, ../sass/base/_base.scss */
 .primary-button {
   padding: 7px 15px;
   border: none;
@@ -136,13 +141,13 @@ h3.sub-title {
   cursor: pointer;
 }
 
-/* line 134, ../sass/base/_base.scss */
+/* line 139, ../sass/base/_base.scss */
 img.lazy-load {
   transform: translateY(-50%);
   transition: all 500ms;
 }
 
-/* line 141, ../sass/base/_base.scss */
+/* line 146, ../sass/base/_base.scss */
 .lazy-fade {
   transform: translateY(0);
   opacity: 1;
@@ -150,17 +155,17 @@ img.lazy-load {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 150, ../sass/base/_base.scss */
+  /* line 155, ../sass/base/_base.scss */
   .body {
     padding: 0;
   }
 
-  /* line 154, ../sass/base/_base.scss */
+  /* line 159, ../sass/base/_base.scss */
   .card {
     max-width: 280px;
   }
 
-  /* line 158, ../sass/base/_base.scss */
+  /* line 163, ../sass/base/_base.scss */
   h1.title {
     font-size: 36px;
     text-align: center;
@@ -7504,20 +7509,20 @@ readers do not read off random characters that represent icons */
   box-shadow: 0px 5px 15px -3px rgba(26, 26, 26, 0.569);
 }
 
-/* line 11, ../sass/modules/_navbar.scss */
+/* line 10, ../sass/modules/_navbar.scss */
 .navbar {
   width: 100%;
-  background: #ccc;
+  background: #292929;
   display: flex;
   justify-content: center;
   z-index: 2;
 }
-/* line 25, ../sass/modules/_navbar.scss */
+/* line 17, ../sass/modules/_navbar.scss */
 .navbar .nav-marker {
   position: absolute;
   display: inline-block;
-  height: 52px;
-  max-height: 52px;
+  height: 49px;
+  max-height: 49px;
   width: 120px;
   border-bottom: 3px solid orange;
   left: 0px;
@@ -7525,7 +7530,7 @@ readers do not read off random characters that represent icons */
   transform: translateX(-180%);
   transition: transform .5s ease-in-out, width .5s ease-in-out;
 }
-/* line 40, ../sass/modules/_navbar.scss */
+/* line 31, ../sass/modules/_navbar.scss */
 .navbar ul {
   list-style: none;
   width: 80%;
@@ -7536,21 +7541,21 @@ readers do not read off random characters that represent icons */
   align-items: center;
   padding: 0 80px;
 }
-/* line 51, ../sass/modules/_navbar.scss */
+/* line 42, ../sass/modules/_navbar.scss */
 .navbar ul li {
   margin: auto;
   padding: 15px;
 }
-/* line 55, ../sass/modules/_navbar.scss */
+/* line 46, ../sass/modules/_navbar.scss */
 .navbar ul li.active {
   border-bottom: 3px solid #e7992a;
 }
-/* line 61, ../sass/modules/_navbar.scss */
+/* line 52, ../sass/modules/_navbar.scss */
 .navbar ul li a:hover {
   color: #dcddde;
 }
 
-/* line 69, ../sass/modules/_navbar.scss */
+/* line 60, ../sass/modules/_navbar.scss */
 .affix {
   position: fixed;
   top: 0px;
@@ -7561,12 +7566,12 @@ readers do not read off random characters that represent icons */
   box-shadow: 0px 5px 15px -3px rgba(26, 26, 26, 0.569);
 }
 
-/* line 79, ../sass/modules/_navbar.scss */
+/* line 70, ../sass/modules/_navbar.scss */
 #resp-navbar {
   display: none;
 }
 
-/* line 84, ../sass/modules/_navbar.scss */
+/* line 75, ../sass/modules/_navbar.scss */
 .logo-container {
   width: calc(100% + 160px);
   display: flex;
@@ -7575,22 +7580,22 @@ readers do not read off random characters that represent icons */
   height: 55px;
   margin: 20px 0 10px -80px;
 }
-/* line 92, ../sass/modules/_navbar.scss */
+/* line 83, ../sass/modules/_navbar.scss */
 .logo-container img {
   height: 100%;
 }
-/* line 96, ../sass/modules/_navbar.scss */
+/* line 87, ../sass/modules/_navbar.scss */
 .logo-container #ham-menu-btn {
   display: none;
 }
 
 @media only screen and (max-width: 999px) {
-  /* line 102, ../sass/modules/_navbar.scss */
+  /* line 93, ../sass/modules/_navbar.scss */
   .logo-container {
     display: none;
   }
 
-  /* line 106, ../sass/modules/_navbar.scss */
+  /* line 97, ../sass/modules/_navbar.scss */
   .navbar {
     display: none;
     height: 0;
@@ -7599,35 +7604,35 @@ readers do not read off random characters that represent icons */
     margin-left: 0;
     transition: height 800ms ease-in-out;
   }
-  /* line 115, ../sass/modules/_navbar.scss */
+  /* line 106, ../sass/modules/_navbar.scss */
   .navbar ul {
     width: 100%;
     background: #222;
     flex-direction: column;
     padding: 0;
   }
-  /* line 121, ../sass/modules/_navbar.scss */
+  /* line 112, ../sass/modules/_navbar.scss */
   .navbar ul li {
     text-align: center;
     width: 100%;
     padding: 20px 0;
   }
-  /* line 127, ../sass/modules/_navbar.scss */
+  /* line 118, ../sass/modules/_navbar.scss */
   .navbar ul li.active {
     background: #111;
     border: none;
   }
 
-  /* line 135, ../sass/modules/_navbar.scss */
+  /* line 126, ../sass/modules/_navbar.scss */
   .navbar-toggled {
     height: 400px;
   }
 
-  /* line 139, ../sass/modules/_navbar.scss */
+  /* line 130, ../sass/modules/_navbar.scss */
   .logo-container {
     justify-content: space-evenly;
   }
-  /* line 143, ../sass/modules/_navbar.scss */
+  /* line 134, ../sass/modules/_navbar.scss */
   .logo-container #ham-menu-btn {
     display: block;
     border-radius: 5px;
@@ -7638,38 +7643,38 @@ readers do not read off random characters that represent icons */
     padding: 0 15px;
     cursor: pointer;
   }
-  /* line 153, ../sass/modules/_navbar.scss */
+  /* line 144, ../sass/modules/_navbar.scss */
   .logo-container #ham-menu-btn:hover {
     background-color: #222;
   }
-  /* line 157, ../sass/modules/_navbar.scss */
+  /* line 148, ../sass/modules/_navbar.scss */
   .logo-container #ham-menu-btn i {
     font-size: 30px;
   }
-  /* line 161, ../sass/modules/_navbar.scss */
+  /* line 152, ../sass/modules/_navbar.scss */
   .logo-container #ham-menu-btn .fa-times {
     display: none;
   }
-  /* line 165, ../sass/modules/_navbar.scss */
+  /* line 156, ../sass/modules/_navbar.scss */
   .logo-container #ham-menu-btn .times-clicked {
     display: block;
   }
-  /* line 169, ../sass/modules/_navbar.scss */
+  /* line 160, ../sass/modules/_navbar.scss */
   .logo-container #ham-menu-btn .bars-clicked {
     display: none;
   }
 
-  /* line 175, ../sass/modules/_navbar.scss */
+  /* line 166, ../sass/modules/_navbar.scss */
   #resp-navbar {
     display: block;
     background: #292929;
   }
 
-  /* line 181, ../sass/modules/_navbar.scss */
+  /* line 172, ../sass/modules/_navbar.scss */
   .resp-navbar {
     overflow-x: hidden;
   }
-  /* line 185, ../sass/modules/_navbar.scss */
+  /* line 176, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible {
     display: flex;
     justify-content: space-around;
@@ -7677,11 +7682,11 @@ readers do not read off random characters that represent icons */
     max-height: 100px;
     height: 55px;
   }
-  /* line 196, ../sass/modules/_navbar.scss */
+  /* line 187, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible img, .resp-navbar .nav-visible #ham-menu-btn {
     height: 100%;
   }
-  /* line 200, ../sass/modules/_navbar.scss */
+  /* line 191, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn {
     border-radius: 5px;
     border: 2px solid #434343;
@@ -7691,27 +7696,27 @@ readers do not read off random characters that represent icons */
     padding: 0 15px;
     cursor: pointer;
   }
-  /* line 209, ../sass/modules/_navbar.scss */
+  /* line 200, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn:hover {
     background-color: #222;
   }
-  /* line 213, ../sass/modules/_navbar.scss */
+  /* line 204, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn i {
     font-size: 30px;
   }
-  /* line 217, ../sass/modules/_navbar.scss */
+  /* line 208, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn .fa-times {
     display: none;
   }
-  /* line 221, ../sass/modules/_navbar.scss */
+  /* line 212, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn .times-clicked {
     display: block;
   }
-  /* line 225, ../sass/modules/_navbar.scss */
+  /* line 216, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn .bars-clicked {
     display: none;
   }
-  /* line 231, ../sass/modules/_navbar.scss */
+  /* line 222, ../sass/modules/_navbar.scss */
   .resp-navbar ul {
     width: 0%;
     position: absolute;
@@ -7723,17 +7728,17 @@ readers do not read off random characters that represent icons */
     overflow: hidden;
     transition: width .5s ease-in-out;
   }
-  /* line 244, ../sass/modules/_navbar.scss */
+  /* line 235, ../sass/modules/_navbar.scss */
   .resp-navbar ul li {
     text-align: center;
     padding: 15px 0;
   }
-  /* line 250, ../sass/modules/_navbar.scss */
+  /* line 241, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-shown {
     width: 100%;
   }
 
-  /* line 256, ../sass/modules/_navbar.scss */
+  /* line 247, ../sass/modules/_navbar.scss */
   .resp-affix {
     position: fixed;
     top: 0px;
