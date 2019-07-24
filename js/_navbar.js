@@ -38,7 +38,6 @@ let navbarAffixObserver = new IntersectionObserver(function(entries, navbarAffix
             navbar.classList.remove('navbar-fixed');
             entry.target.style.paddingTop = "0px";
         }else{
-            console.log(entry.target);
             navbar.classList.add('navbar-fixed');
             entry.target.style.paddingTop = navbar.clientHeight + "px";
         }

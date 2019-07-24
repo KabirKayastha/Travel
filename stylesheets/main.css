@@ -156,7 +156,7 @@ img.lazy-load {
 
 @media only screen and (max-width: 768px) {
   /* line 155, ../sass/base/_base.scss */
-  .body {
+  .section-all {
     padding: 0;
   }
 
@@ -8394,4 +8394,73 @@ readers do not read off random characters that represent icons */
   #footer .resp-header ul li {
     padding: 5px;
   }
+}
+/* line 2, ../sass/modules/_detailPage.scss */
+.sec-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background: rgba(41, 41, 41, 0.582);
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0px 5px 15px -3px rgba(26, 26, 26, 0.569);
+}
+/* line 13, ../sass/modules/_detailPage.scss */
+.sec-navbar ul {
+  list-style: none;
+  width: 80%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+}
+/* line 24, ../sass/modules/_detailPage.scss */
+.sec-navbar ul li {
+  margin: auto;
+  padding: 15px;
+}
+/* line 28, ../sass/modules/_detailPage.scss */
+.sec-navbar ul li.active {
+  border-bottom: 3px solid #e7992a;
+}
+/* line 34, ../sass/modules/_detailPage.scss */
+.sec-navbar ul li a:hover {
+  color: #dcddde;
+}
+
+/* line 42, ../sass/modules/_detailPage.scss */
+#banner {
+  background-color: #ccc;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 500px;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 52, ../sass/modules/_detailPage.scss */
+.sec-content {
+  padding: 0 50px;
+  width: 75%;
+  background-color: #444;
+}
+/* line 57, ../sass/modules/_detailPage.scss */
+.sec-content p {
+  font-size: 16px;
+  padding: 0 0 20px 0;
+  text-indent: 30px;
+  line-height: 26px;
+}
+/* line 63, ../sass/modules/_detailPage.scss */
+.sec-content h1.sec-title {
+  text-align: left;
+  padding-bottom: 10px;
+  margin: 0;
+  text-shadow: none;
 }
