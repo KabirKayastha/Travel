@@ -8310,7 +8310,7 @@ readers do not read off random characters that represent icons */
   }
 }
 /* line 1, ../sass/modules/_footer.scss */
-#footer {
+.footer {
   height: 100px;
   width: calc(100% + 160px);
   margin-left: -80px;
@@ -8320,18 +8320,18 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 /* line 11, ../sass/modules/_footer.scss */
-#footer .copyright {
+.footer .copyright {
   padding: 0 20px;
 }
 /* line 15, ../sass/modules/_footer.scss */
-#footer .social-links {
+.footer .social-links {
   width: 20%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 /* line 21, ../sass/modules/_footer.scss */
-#footer .social-links .icon-container {
+.footer .social-links .icon-container {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -8342,16 +8342,16 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 /* line 32, ../sass/modules/_footer.scss */
-#footer .social-links .icon-container h5 {
+.footer .social-links .icon-container h5 {
   margin: 0 10px;
 }
 /* line 36, ../sass/modules/_footer.scss */
-#footer .social-links .icon-container a, #footer .social-links .icon-container img {
+.footer .social-links .icon-container a, .footer .social-links .icon-container img {
   height: 100%;
   width: 100%;
 }
 /* line 42, ../sass/modules/_footer.scss */
-#footer #resp-header {
+.footer #resp-header {
   display: none;
 }
 
@@ -8401,7 +8401,7 @@ readers do not read off random characters that represent icons */
   top: 0;
   z-index: 99;
   width: 100%;
-  background: rgba(41, 41, 41, 0.582);
+  background: #292929;
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -8444,23 +8444,188 @@ readers do not read off random characters that represent icons */
   background-repeat: no-repeat;
 }
 
-/* line 52, ../sass/modules/_detailPage.scss */
+/* line 53, ../sass/modules/_detailPage.scss */
 .sec-content {
-  padding: 0 50px;
-  width: 75%;
-  background-color: #444;
+  padding: 0 50px 50px 50px;
+  width: 70%;
+  background-color: rgba(68, 68, 68, 0.534);
+  margin: 20px;
+  border-radius: 5px;
+  float: left;
 }
-/* line 57, ../sass/modules/_detailPage.scss */
+/* line 60, ../sass/modules/_detailPage.scss */
 .sec-content p {
   font-size: 16px;
   padding: 0 0 20px 0;
   text-indent: 30px;
   line-height: 26px;
 }
-/* line 63, ../sass/modules/_detailPage.scss */
+/* line 66, ../sass/modules/_detailPage.scss */
 .sec-content h1.sec-title {
   text-align: left;
   padding-bottom: 10px;
   margin: 0;
   text-shadow: none;
+}
+/* line 75, ../sass/modules/_detailPage.scss */
+.sec-content .content-gallery h3.sub-title {
+  margin: 30px 0;
+}
+/* line 79, ../sass/modules/_detailPage.scss */
+.sec-content .content-gallery .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 84, ../sass/modules/_detailPage.scss */
+.sec-content .content-gallery .wrapper .col {
+  width: 32%;
+}
+/* line 87, ../sass/modules/_detailPage.scss */
+.sec-content .content-gallery .wrapper .col img {
+  width: 100%;
+  height: auto;
+  padding: 7px 0;
+}
+/* line 92, ../sass/modules/_detailPage.scss */
+.sec-content .content-gallery .wrapper .col img:first-child {
+  padding-top: 0;
+}
+
+/* line 101, ../sass/modules/_detailPage.scss */
+.side-bar {
+  width: 25%;
+  float: right;
+  height: 100%;
+  padding: 20px 0;
+}
+/* line 107, ../sass/modules/_detailPage.scss */
+.side-bar h3.sub-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+/* line 113, ../sass/modules/_detailPage.scss */
+.side-bar .card-container {
+  display: flex;
+}
+/* line 116, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card {
+  max-height: 300px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+/* line 126, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(231, 152, 42, 0.616);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* line 138, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card span h5 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 145, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card .card-desc {
+  position: relative;
+  background-color: #0d3f67;
+  height: 70px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+/* line 154, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card .card-desc h4 {
+  margin: 0;
+  padding: 0;
+}
+/* line 159, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card .card-desc p {
+  margin: 0;
+  padding-top: 10px;
+}
+/* line 164, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card .card-desc .icon-container {
+  position: absolute;
+  top: calc(50% - 17.5px);
+  right: 12px;
+  background-color: #dedede;
+  border-radius: 50%;
+  z-index: 99;
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+}
+/* line 174, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card .card-desc .icon-container a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 180, ../sass/modules/_detailPage.scss */
+.side-bar .card-container .card .card-desc .icon-container a img {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 194, ../sass/modules/_detailPage.scss */
+.recom-places {
+  width: 70%;
+  float: left;
+  margin: 20px;
+  padding: 20px 50px;
+}
+/* line 200, ../sass/modules/_detailPage.scss */
+.recom-places h3.sub-title {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+/* line 207, ../sass/modules/_detailPage.scss */
+.recom-places .card-container {
+  width: 100%;
+  justify-content: space-between;
+}
+/* line 212, ../sass/modules/_detailPage.scss */
+.recom-places .card-container .card {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+/* line 220, ../sass/modules/_detailPage.scss */
+.recom-places .card-container .card img {
+  width: auto;
+  height: 80%;
+}
+/* line 225, ../sass/modules/_detailPage.scss */
+.recom-places .card-container .card h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 233, ../sass/modules/_detailPage.scss */
+.sec-footer {
+  width: 100%;
+  margin: 0;
 }

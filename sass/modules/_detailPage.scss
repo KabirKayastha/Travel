@@ -4,7 +4,7 @@
     top: 0;
     z-index: 99;
     width: 100%;
-    background: rgba(41, 41, 41, 0.582);
+    background: rgba(41, 41, 41, 1);
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -49,11 +49,14 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.sec-content{
-    padding: 0 50px;
-    width: 75%;
-    background-color: #444;
 
+.sec-content{
+    padding: 0 50px 50px 50px;
+    width: 70%;
+    background-color: rgba(68, 68, 68, 0.534);
+    margin: 20px;
+    border-radius: 5px;
+    float: left;
     p{
         font-size: 16px;
         padding: 0 0 20px 0;
@@ -66,4 +69,168 @@
         margin: 0;
         text-shadow: none;
     }
+
+    .content-gallery{
+
+        h3.sub-title{
+            margin: 30px 0;
+        }
+
+        .wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .col{
+                width: 32%;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    padding: 7px 0;
+
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.side-bar{
+    width: 25%;
+    float: right;
+    height: 100%;
+    padding: 20px 0;
+
+    h3.sub-title{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .card-container{
+        display: flex;
+
+        .card{
+            max-height: 300px;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+
+            span{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                height: 60px;
+                width: 60px;
+                background-color: rgba(231, 152, 42, 0.616);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+
+                h5{
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+
+            .card-desc{
+                position: relative;
+                background-color: $primary-color;
+                height: 70px;
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+
+                h4{
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p{
+                    margin: 0;
+                    padding-top: 10px;
+                }
+
+                .icon-container{
+                    position: absolute;
+                    top: calc(50% - 17.5px);
+                    right: 12px;
+                    background-color: #dedede;
+                    border-radius: 50%;
+                    z-index: 99;
+                    width: 35px;
+                    height: 35px;
+                    padding: 2px;
+                    a{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                }   
+            }
+        }
+
+    }
+
+}
+
+.recom-places{
+    width: 70%;
+    float: left;
+    margin: 20px;
+    padding: 20px 50px;
+
+    h3.sub-title{
+        margin: 0;
+        padding: 0;
+        text-align: left;   
+        margin-bottom: 20px; 
+    }
+
+    .card-container{
+        width: 100%;
+        justify-content: space-between;
+
+
+        .card{
+            width: 30%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+
+            img{
+                width: auto;
+                height: 80%;
+            }
+
+            h3{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.sec-footer{
+    width: 100%;
+    margin: 0;
 }
