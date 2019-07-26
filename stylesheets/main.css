@@ -8566,7 +8566,6 @@ readers do not read off random characters that represent icons */
   right: 12px;
   background-color: #dedede;
   border-radius: 50%;
-  z-index: 99;
   width: 35px;
   height: 35px;
   padding: 2px;
@@ -8628,4 +8627,134 @@ readers do not read off random characters that represent icons */
 .sec-footer {
   width: 100%;
   margin: 0;
+}
+
+/* line 238, ../sass/modules/_detailPage.scss */
+.sec-resp-navbar {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 243, ../sass/modules/_detailPage.scss */
+  .sec-navbar {
+    display: none;
+  }
+
+  /* line 247, ../sass/modules/_detailPage.scss */
+  .side-bar {
+    width: 100%;
+  }
+
+  /* line 251, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar {
+    display: block;
+    width: 100%;
+    background: #292929;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 10px 15px -10px rgba(26, 26, 26, 0.569);
+    transform: translateX(100%);
+    transition: .5s;
+    z-index: 99;
+  }
+  /* line 262, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar::before {
+    content: url("D:/work/Travel/images/hamburger-menu.png");
+    height: 50px;
+    width: 50px;
+    padding: 7px 5px;
+    box-sizing: border-box;
+    background-color: #292929;
+    position: absolute;
+    top: 0;
+    left: -50px;
+  }
+  /* line 273, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar::before:hover {
+    background-color: gold;
+  }
+  /* line 278, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar ul {
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;
+    text-align: center;
+  }
+  /* line 284, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar ul li {
+    padding: 20px 0;
+  }
+  /* line 289, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar ul li.active {
+    background-color: darkgray;
+  }
+  /* line 295, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar ul li.close-nav span {
+    height: 5px;
+    width: 40px;
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    z-index: 9;
+  }
+  /* line 303, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar ul li.close-nav span:first-child {
+    transform: rotate(45deg);
+  }
+  /* line 307, ../sass/modules/_detailPage.scss */
+  .sec-resp-navbar ul li.close-nav span:last-child {
+    transform: rotate(-45deg);
+  }
+
+  /* line 315, ../sass/modules/_detailPage.scss */
+  .sec-nav-shown {
+    transform: translateX(0);
+  }
+
+  /* line 319, ../sass/modules/_detailPage.scss */
+  #banner {
+    min-height: 350px;
+    max-height: 350px;
+    background-position: center;
+  }
+
+  /* line 325, ../sass/modules/_detailPage.scss */
+  .sec-content {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  /* line 330, ../sass/modules/_detailPage.scss */
+  .sec-content h1.title {
+    padding: 15px 0;
+  }
+  /* line 336, ../sass/modules/_detailPage.scss */
+  .sec-content .content-gallery .wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 339, ../sass/modules/_detailPage.scss */
+  .sec-content .content-gallery .wrapper .col {
+    width: 100%;
+  }
+
+  /* line 346, ../sass/modules/_detailPage.scss */
+  .recom-places {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 351, ../sass/modules/_detailPage.scss */
+  .recom-places h3.sub-title {
+    text-align: center;
+    padding-top: 30px;
+  }
+  /* line 356, ../sass/modules/_detailPage.scss */
+  .recom-places .card-container {
+    flex-direction: column;
+  }
+  /* line 359, ../sass/modules/_detailPage.scss */
+  .recom-places .card-container .card {
+    min-width: 250px;
+    width: 250px;
+  }
 }
