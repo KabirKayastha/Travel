@@ -1,186 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap");
-/* line 7, ../sass/base/_base.scss */
-html {
-  scroll-behavior: smooth;
-}
-
-/* line 11, ../sass/base/_base.scss */
-body, .body {
-  margin: 0;
-  padding: 0;
-  background: #292929;
-  color: #f4f4f4;
-  overflow-x: hidden;
-  font-family: 'Montserrat Alternates', sans-serif;
-}
-
-/* line 21, ../sass/base/_base.scss */
-.body {
-  padding: 100px 0 0 0;
-  letter-spacing: 1px;
-}
-
-/* line 30, ../sass/base/_base.scss */
-* {
-  box-sizing: border-box;
-  outline: transparent;
-}
-
-/* line 35, ../sass/base/_base.scss */
-a {
-  text-decoration: none;
-  color: #f4f4f4;
-}
-
-/* line 40, ../sass/base/_base.scss */
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* line 47, ../sass/base/_base.scss */
-.card {
-  margin: 20px 10px;
-  border-radius: 10px;
-  background: #0d3f67;
-  box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
-  overflow: hidden;
-}
-
-/* line 55, ../sass/base/_base.scss */
-h1.title {
-  text-align: center;
-  margin: 0px 0 50px 0;
-  padding: 70px 0 0 0;
-  letter-spacing: 7px;
-  color: #e6e6e6;
-  text-shadow: 5px 5px 6px rgba(26, 26, 26, 0.569);
-  font-size: 40px;
-  font-family: 'Staatliches', cursive;
-  text-transform: capitalize;
-  font-variant: small-caps;
-}
-
-/* line 68, ../sass/base/_base.scss */
-h3.sub-title {
-  text-align: center;
-  margin: -20px 0 50px 0;
-  letter-spacing: 7px;
-  color: #e6e6e6;
-  text-shadow: 5px 5px 6px rgba(26, 26, 26, 0.569);
-  font-size: 26px;
-  font-family: 'Staatliches', cursive;
-  text-transform: capitalize;
-  font-variant: small-caps;
-}
-
-/* line 81, ../sass/base/_base.scss */
-.section-all {
-  padding: 0 80px;
-}
-
-/* line 86, ../sass/base/_base.scss */
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-/* line 93, ../sass/base/_base.scss */
-.to-top-button {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  background-color: #0d3f67;
-  box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  z-index: 99;
-  cursor: pointer;
-}
-/* line 108, ../sass/base/_base.scss */
-.to-top-button a {
-  width: 100%;
-  height: 100%;
-}
-/* line 113, ../sass/base/_base.scss */
-.to-top-button img {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 119, ../sass/base/_base.scss */
-.svg-icon, .sm-icon {
-  color: #e6e6e6;
-  font-weight: bolder;
-  margin: 0 5px;
-  width: 20px;
-}
-
-/* line 126, ../sass/base/_base.scss */
-.primary-button {
-  padding: 7px 15px;
-  border: none;
-  border-radius: 15px;
-  background-color: #e7992a;
-  box-shadow: 3px 3px 15px 0px rgba(26, 26, 26, 0.569);
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  outline: transparent;
-  cursor: pointer;
-}
-
-/* line 139, ../sass/base/_base.scss */
-img.lazy-load {
-  transform: translateY(-50%);
-  transition: all 500ms;
-}
-
-/* line 146, ../sass/base/_base.scss */
-.lazy-fade {
-  transform: translateY(0);
-  opacity: 1;
-  transition: all 500ms;
-}
-
-@media only screen and (max-width: 768px) {
-  /* line 155, ../sass/base/_base.scss */
-  .section-all {
-    padding: 0;
-  }
-
-  /* line 159, ../sass/base/_base.scss */
-  .card {
-    max-width: 280px;
-  }
-
-  /* line 163, ../sass/base/_base.scss */
-  h1.title {
-    font-size: 36px;
-    text-align: center;
-  }
-}
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap");
 /* line 4, ../fontawesome/scss/_core.scss */
 .fa,
 .fas,
 #tours .wrapper .owl-carousel .owl-nav button.owl-next,
 #tours .wrapper .owl-carousel .owl-nav button.owl-prev,
 #reviews .reviews .wrapper .card .review-content .review-text,
+.review-flexbox .wrapper .col-6 .review-card .review-text,
 .far,
 .fal,
 .fab {
@@ -194,7 +26,7 @@ img.lazy-load {
 }
 
 /* line 18, ../fontawesome/scss/_core.scss */
-#tours .wrapper .owl-carousel .owl-nav button.owl-next, #tours .wrapper .owl-carousel .owl-nav button.owl-prev, #reviews .reviews .wrapper .card .review-content .review-text {
+#tours .wrapper .owl-carousel .owl-nav button.owl-next, #tours .wrapper .owl-carousel .owl-nav button.owl-prev, #reviews .reviews .wrapper .card .review-content .review-text, .review-flexbox .wrapper .col-6 .review-card .review-text {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -320,6 +152,7 @@ img.lazy-load {
 #tours .wrapper .owl-carousel .owl-nav button.fa-pull-left.owl-next,
 #tours .wrapper .owl-carousel .owl-nav button.fa-pull-left.owl-prev,
 #reviews .reviews .wrapper .card .review-content .fa-pull-left.review-text,
+.review-flexbox .wrapper .col-6 .review-card .fa-pull-left.review-text,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -331,6 +164,7 @@ img.lazy-load {
 #tours .wrapper .owl-carousel .owl-nav button.fa-pull-right.owl-next,
 #tours .wrapper .owl-carousel .owl-nav button.fa-pull-right.owl-prev,
 #reviews .reviews .wrapper .card .review-content .fa-pull-right.review-text,
+.review-flexbox .wrapper .col-6 .review-card .fa-pull-right.review-text,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -7396,11 +7230,181 @@ readers do not read off random characters that represent icons */
 .fas,
 #tours .wrapper .owl-carousel .owl-nav button.owl-next,
 #tours .wrapper .owl-carousel .owl-nav button.owl-prev,
-#reviews .reviews .wrapper .card .review-content .review-text {
+#reviews .reviews .wrapper .card .review-content .review-text,
+.review-flexbox .wrapper .col-6 .review-card .review-text {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
+/* line 7, ../sass/base/_base.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 11, ../sass/base/_base.scss */
+body, .body {
+  margin: 0;
+  padding: 0;
+  background: #292929;
+  color: #f4f4f4;
+  overflow-x: hidden;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* line 21, ../sass/base/_base.scss */
+.body {
+  padding: 100px 0 0 0;
+  letter-spacing: 1px;
+}
+
+/* line 30, ../sass/base/_base.scss */
+* {
+  box-sizing: border-box;
+  outline: transparent;
+}
+
+/* line 35, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+/* line 40, ../sass/base/_base.scss */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 47, ../sass/base/_base.scss */
+.card {
+  margin: 20px 10px;
+  border-radius: 10px;
+  background: #0d3f67;
+  box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
+  overflow: hidden;
+}
+
+/* line 55, ../sass/base/_base.scss */
+h1.title {
+  text-align: center;
+  margin: 0px 0 50px 0;
+  padding: 70px 0 0 0;
+  letter-spacing: 7px;
+  color: #e6e6e6;
+  text-shadow: 5px 5px 6px rgba(26, 26, 26, 0.569);
+  font-size: 40px;
+  font-family: 'Staatliches', cursive;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+/* line 68, ../sass/base/_base.scss */
+h3.sub-title {
+  text-align: center;
+  margin: -20px 0 50px 0;
+  letter-spacing: 7px;
+  color: #e6e6e6;
+  text-shadow: 5px 5px 6px rgba(26, 26, 26, 0.569);
+  font-size: 26px;
+  font-family: 'Staatliches', cursive;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+/* line 81, ../sass/base/_base.scss */
+.section-all {
+  padding: 0 80px;
+}
+
+/* line 86, ../sass/base/_base.scss */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* line 93, ../sass/base/_base.scss */
+.to-top-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: #0d3f67;
+  box-shadow: 5px 8px 15px 0px rgba(26, 26, 26, 0.569);
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
+/* line 108, ../sass/base/_base.scss */
+.to-top-button a {
+  width: 100%;
+  height: 100%;
+}
+/* line 113, ../sass/base/_base.scss */
+.to-top-button img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 119, ../sass/base/_base.scss */
+.svg-icon, .sm-icon {
+  color: #e6e6e6;
+  font-weight: bolder;
+  margin: 0 5px;
+  width: 20px;
+}
+
+/* line 126, ../sass/base/_base.scss */
+.primary-button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #e7992a;
+  box-shadow: 3px 3px 15px 0px rgba(26, 26, 26, 0.569);
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  outline: transparent;
+  cursor: pointer;
+}
+
+/* line 139, ../sass/base/_base.scss */
+img.lazy-load {
+  transform: translateY(-50%);
+  transition: all 500ms;
+}
+
+/* line 146, ../sass/base/_base.scss */
+.lazy-fade {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 500ms;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 155, ../sass/base/_base.scss */
+  .section-all {
+    padding: 0;
+  }
+
+  /* line 159, ../sass/base/_base.scss */
+  .card {
+    max-width: 280px;
+  }
+
+  /* line 163, ../sass/base/_base.scss */
+  h1.title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
 /* line 3, ../sass/modules/_parallax.scss */
 .parallax {
   min-height: 140vh;
@@ -7598,83 +7602,19 @@ readers do not read off random characters that represent icons */
   /* line 97, ../sass/modules/_navbar.scss */
   .navbar {
     display: none;
-    height: 0;
-    overflow: hidden;
-    width: 100%;
-    margin-left: 0;
-    transition: height 800ms ease-in-out;
-  }
-  /* line 106, ../sass/modules/_navbar.scss */
-  .navbar ul {
-    width: 100%;
-    background: #222;
-    flex-direction: column;
-    padding: 0;
-  }
-  /* line 112, ../sass/modules/_navbar.scss */
-  .navbar ul li {
-    text-align: center;
-    width: 100%;
-    padding: 20px 0;
-  }
-  /* line 118, ../sass/modules/_navbar.scss */
-  .navbar ul li.active {
-    background: #111;
-    border: none;
   }
 
-  /* line 126, ../sass/modules/_navbar.scss */
-  .navbar-toggled {
-    height: 400px;
-  }
-
-  /* line 130, ../sass/modules/_navbar.scss */
-  .logo-container {
-    justify-content: space-evenly;
-  }
-  /* line 134, ../sass/modules/_navbar.scss */
-  .logo-container #ham-menu-btn {
-    display: block;
-    border-radius: 5px;
-    border: 2px solid #434343;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15px;
-    cursor: pointer;
-  }
-  /* line 144, ../sass/modules/_navbar.scss */
-  .logo-container #ham-menu-btn:hover {
-    background-color: #222;
-  }
-  /* line 148, ../sass/modules/_navbar.scss */
-  .logo-container #ham-menu-btn i {
-    font-size: 30px;
-  }
-  /* line 152, ../sass/modules/_navbar.scss */
-  .logo-container #ham-menu-btn .fa-times {
-    display: none;
-  }
-  /* line 156, ../sass/modules/_navbar.scss */
-  .logo-container #ham-menu-btn .times-clicked {
-    display: block;
-  }
-  /* line 160, ../sass/modules/_navbar.scss */
-  .logo-container #ham-menu-btn .bars-clicked {
-    display: none;
-  }
-
-  /* line 166, ../sass/modules/_navbar.scss */
+  /* line 101, ../sass/modules/_navbar.scss */
   #resp-navbar {
     display: block;
     background: #292929;
   }
 
-  /* line 172, ../sass/modules/_navbar.scss */
+  /* line 107, ../sass/modules/_navbar.scss */
   .resp-navbar {
     overflow-x: hidden;
   }
-  /* line 176, ../sass/modules/_navbar.scss */
+  /* line 110, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible {
     display: flex;
     justify-content: space-around;
@@ -7682,11 +7622,11 @@ readers do not read off random characters that represent icons */
     max-height: 100px;
     height: 55px;
   }
-  /* line 187, ../sass/modules/_navbar.scss */
+  /* line 117, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible img, .resp-navbar .nav-visible #ham-menu-btn {
     height: 100%;
   }
-  /* line 191, ../sass/modules/_navbar.scss */
+  /* line 121, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn {
     border-radius: 5px;
     border: 2px solid #434343;
@@ -7696,27 +7636,27 @@ readers do not read off random characters that represent icons */
     padding: 0 15px;
     cursor: pointer;
   }
-  /* line 200, ../sass/modules/_navbar.scss */
+  /* line 130, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn:hover {
     background-color: #222;
   }
-  /* line 204, ../sass/modules/_navbar.scss */
+  /* line 134, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn i {
     font-size: 30px;
   }
-  /* line 208, ../sass/modules/_navbar.scss */
+  /* line 138, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn .fa-times {
     display: none;
   }
-  /* line 212, ../sass/modules/_navbar.scss */
+  /* line 142, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn .times-clicked {
     display: block;
   }
-  /* line 216, ../sass/modules/_navbar.scss */
+  /* line 146, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-visible #ham-menu-btn .bars-clicked {
     display: none;
   }
-  /* line 222, ../sass/modules/_navbar.scss */
+  /* line 152, ../sass/modules/_navbar.scss */
   .resp-navbar ul {
     width: 0%;
     position: absolute;
@@ -7728,17 +7668,55 @@ readers do not read off random characters that represent icons */
     overflow: hidden;
     transition: width .5s ease-in-out;
   }
-  /* line 235, ../sass/modules/_navbar.scss */
+  /* line 163, ../sass/modules/_navbar.scss */
   .resp-navbar ul li {
     text-align: center;
     padding: 15px 0;
   }
-  /* line 241, ../sass/modules/_navbar.scss */
+  /* line 167, ../sass/modules/_navbar.scss */
+  .resp-navbar ul li input[type=search] {
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0px 10px;
+    padding-bottom: 7px;
+  }
+  /* line 176, ../sass/modules/_navbar.scss */
+  .resp-navbar ul li input[type=search]:placeholder-shown::placeholder {
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  /* line 181, ../sass/modules/_navbar.scss */
+  .resp-navbar ul li input[type=search]:focus {
+    border-bottom-color: #e7992a;
+  }
+  /* line 186, ../sass/modules/_navbar.scss */
+  .resp-navbar ul li button {
+    background-color: #e7992a;
+    background-image: url(D:/work/Travel/images/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    width: 30px;
+  }
+  /* line 200, ../sass/modules/_navbar.scss */
+  .resp-navbar ul li button:hover {
+    background-color: #de8d19;
+  }
+  /* line 207, ../sass/modules/_navbar.scss */
   .resp-navbar .nav-shown {
     width: 100%;
   }
 
-  /* line 247, ../sass/modules/_navbar.scss */
+  /* line 212, ../sass/modules/_navbar.scss */
   .resp-affix {
     position: fixed;
     top: 0px;
@@ -7781,24 +7759,63 @@ readers do not read off random characters that represent icons */
 #header ul.right-header {
   text-transform: capitalize;
 }
-/* line 30, ../sass/modules/_header.scss */
+/* line 31, ../sass/modules/_header.scss */
+#header ul.right-header li input[type=search] {
+  width: 250px;
+  color: #fff;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0px 10px;
+  padding-bottom: 7px;
+}
+/* line 41, ../sass/modules/_header.scss */
+#header ul.right-header li input[type=search]:placeholder-shown::placeholder {
+  color: #fff;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+/* line 46, ../sass/modules/_header.scss */
+#header ul.right-header li input[type=search]:focus {
+  border-bottom-color: #e7992a;
+}
+/* line 51, ../sass/modules/_header.scss */
+#header ul.right-header li button {
+  background-color: #e7992a;
+  background-image: url(D:/work/Travel/images/search.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  top: 7px;
+  width: 30px;
+}
+/* line 65, ../sass/modules/_header.scss */
+#header ul.right-header li button:hover {
+  background-color: #de8d19;
+}
+/* line 72, ../sass/modules/_header.scss */
 #header ul li {
   margin: 0 10px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 39, ../sass/modules/_header.scss */
+  /* line 81, ../sass/modules/_header.scss */
   #header {
     display: none;
     flex-direction: column;
     justify-content: center;
   }
-  /* line 44, ../sass/modules/_header.scss */
+  /* line 86, ../sass/modules/_header.scss */
   #header .left-header {
     display: flex;
     flex-direction: column;
   }
-  /* line 49, ../sass/modules/_header.scss */
+  /* line 91, ../sass/modules/_header.scss */
   #header li {
     padding: 5px 0;
   }
@@ -8212,37 +8229,37 @@ readers do not read off random characters that represent icons */
   margin: 5px 0;
   text-transform: capitalize;
 }
-/* line 99, ../sass/modules/_testimonials.scss */
+/* line 95, ../sass/modules/_testimonials.scss */
 #reviews .button-container {
   margin: 10px 0;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-/* line 105, ../sass/modules/_testimonials.scss */
+/* line 101, ../sass/modules/_testimonials.scss */
 #reviews .button-container button {
   margin: 5px;
 }
 
 @media only screen and (max-width: 1025px) {
-  /* line 120, ../sass/modules/_testimonials.scss */
+  /* line 116, ../sass/modules/_testimonials.scss */
   #reviews .reviews .wrapper .card {
     min-width: 80%;
     height: auto;
     margin: 0 auto 30px auto;
     flex-direction: column;
   }
-  /* line 127, ../sass/modules/_testimonials.scss */
+  /* line 123, ../sass/modules/_testimonials.scss */
   #reviews .reviews .wrapper .card .profile-img, #reviews .reviews .wrapper .card .review-content {
     width: 100%;
   }
-  /* line 131, ../sass/modules/_testimonials.scss */
+  /* line 127, ../sass/modules/_testimonials.scss */
   #reviews .reviews .wrapper .card .profile-img {
     min-height: 200px;
     height: 200px;
     background-color: transparent;
   }
-  /* line 137, ../sass/modules/_testimonials.scss */
+  /* line 133, ../sass/modules/_testimonials.scss */
   #reviews .reviews .wrapper .card .review-content {
     padding-bottom: 0;
   }
@@ -8499,17 +8516,17 @@ readers do not read off random characters that represent icons */
   height: 100%;
   padding: 20px 0;
 }
-/* line 107, ../sass/modules/_detailPage.scss */
+/* line 108, ../sass/modules/_detailPage.scss */
 .side-bar h3.sub-title {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
 }
-/* line 113, ../sass/modules/_detailPage.scss */
+/* line 114, ../sass/modules/_detailPage.scss */
 .side-bar .card-container {
   display: flex;
 }
-/* line 116, ../sass/modules/_detailPage.scss */
+/* line 117, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card {
   max-height: 300px;
   height: 300px;
@@ -8520,7 +8537,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   align-items: flex-end;
 }
-/* line 126, ../sass/modules/_detailPage.scss */
+/* line 127, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card span {
   position: absolute;
   top: 20px;
@@ -8533,13 +8550,13 @@ readers do not read off random characters that represent icons */
   align-items: center;
   border-radius: 50%;
 }
-/* line 138, ../sass/modules/_detailPage.scss */
+/* line 139, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card span h5 {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 145, ../sass/modules/_detailPage.scss */
+/* line 146, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card .card-desc {
   position: relative;
   background-color: #0d3f67;
@@ -8549,17 +8566,17 @@ readers do not read off random characters that represent icons */
   display: flex;
   align-items: center;
 }
-/* line 154, ../sass/modules/_detailPage.scss */
+/* line 155, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card .card-desc h4 {
   margin: 0;
   padding: 0;
 }
-/* line 159, ../sass/modules/_detailPage.scss */
+/* line 160, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card .card-desc p {
   margin: 0;
   padding-top: 10px;
 }
-/* line 164, ../sass/modules/_detailPage.scss */
+/* line 165, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card .card-desc .icon-container {
   position: absolute;
   top: calc(50% - 17.5px);
@@ -8570,7 +8587,7 @@ readers do not read off random characters that represent icons */
   height: 35px;
   padding: 2px;
 }
-/* line 174, ../sass/modules/_detailPage.scss */
+/* line 175, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card .card-desc .icon-container a {
   height: 100%;
   width: 100%;
@@ -8578,32 +8595,32 @@ readers do not read off random characters that represent icons */
   justify-content: center;
   align-items: center;
 }
-/* line 180, ../sass/modules/_detailPage.scss */
+/* line 181, ../sass/modules/_detailPage.scss */
 .side-bar .card-container .card .card-desc .icon-container a img {
   height: 100%;
   width: 100%;
 }
 
-/* line 194, ../sass/modules/_detailPage.scss */
+/* line 195, ../sass/modules/_detailPage.scss */
 .recom-places {
   width: 70%;
   float: left;
   margin: 20px;
   padding: 20px 50px;
 }
-/* line 200, ../sass/modules/_detailPage.scss */
+/* line 201, ../sass/modules/_detailPage.scss */
 .recom-places h3.sub-title {
   margin: 0;
   padding: 0;
   text-align: left;
   margin-bottom: 20px;
 }
-/* line 207, ../sass/modules/_detailPage.scss */
+/* line 208, ../sass/modules/_detailPage.scss */
 .recom-places .card-container {
   width: 100%;
   justify-content: space-between;
 }
-/* line 212, ../sass/modules/_detailPage.scss */
+/* line 213, ../sass/modules/_detailPage.scss */
 .recom-places .card-container .card {
   width: 30%;
   height: 250px;
@@ -8612,40 +8629,40 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
   margin: 20px 0;
 }
-/* line 220, ../sass/modules/_detailPage.scss */
+/* line 221, ../sass/modules/_detailPage.scss */
 .recom-places .card-container .card img {
   width: auto;
   height: 80%;
 }
-/* line 225, ../sass/modules/_detailPage.scss */
+/* line 226, ../sass/modules/_detailPage.scss */
 .recom-places .card-container .card h3 {
   margin: 0;
   padding: 0;
 }
 
-/* line 233, ../sass/modules/_detailPage.scss */
+/* line 234, ../sass/modules/_detailPage.scss */
 .sec-footer {
   width: 100%;
   margin: 0;
 }
 
-/* line 238, ../sass/modules/_detailPage.scss */
+/* line 239, ../sass/modules/_detailPage.scss */
 .sec-resp-navbar {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 243, ../sass/modules/_detailPage.scss */
+  /* line 244, ../sass/modules/_detailPage.scss */
   .sec-navbar {
     display: none;
   }
 
-  /* line 247, ../sass/modules/_detailPage.scss */
+  /* line 248, ../sass/modules/_detailPage.scss */
   .side-bar {
     width: 100%;
   }
 
-  /* line 251, ../sass/modules/_detailPage.scss */
+  /* line 252, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar {
     display: block;
     width: 100%;
@@ -8657,7 +8674,7 @@ readers do not read off random characters that represent icons */
     transition: .5s;
     z-index: 99;
   }
-  /* line 262, ../sass/modules/_detailPage.scss */
+  /* line 263, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar::before {
     content: url("D:/work/Travel/images/hamburger-menu.png");
     height: 50px;
@@ -8669,26 +8686,26 @@ readers do not read off random characters that represent icons */
     top: 0;
     left: -50px;
   }
-  /* line 273, ../sass/modules/_detailPage.scss */
+  /* line 274, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar::before:hover {
     background-color: gold;
   }
-  /* line 278, ../sass/modules/_detailPage.scss */
+  /* line 279, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar ul {
     margin: 0;
     padding: 10px 0 0 0;
     list-style: none;
     text-align: center;
   }
-  /* line 284, ../sass/modules/_detailPage.scss */
+  /* line 285, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar ul li {
     padding: 20px 0;
   }
-  /* line 289, ../sass/modules/_detailPage.scss */
+  /* line 290, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar ul li.active {
     background-color: darkgray;
   }
-  /* line 295, ../sass/modules/_detailPage.scss */
+  /* line 296, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar ul li.close-nav span {
     height: 5px;
     width: 40px;
@@ -8697,64 +8714,204 @@ readers do not read off random characters that represent icons */
     left: 10px;
     z-index: 9;
   }
-  /* line 303, ../sass/modules/_detailPage.scss */
+  /* line 304, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar ul li.close-nav span:first-child {
     transform: rotate(45deg);
   }
-  /* line 307, ../sass/modules/_detailPage.scss */
+  /* line 308, ../sass/modules/_detailPage.scss */
   .sec-resp-navbar ul li.close-nav span:last-child {
     transform: rotate(-45deg);
   }
 
-  /* line 315, ../sass/modules/_detailPage.scss */
+  /* line 316, ../sass/modules/_detailPage.scss */
   .sec-nav-shown {
     transform: translateX(0);
   }
 
-  /* line 319, ../sass/modules/_detailPage.scss */
+  /* line 320, ../sass/modules/_detailPage.scss */
   #banner {
     min-height: 350px;
     max-height: 350px;
     background-position: center;
   }
 
-  /* line 325, ../sass/modules/_detailPage.scss */
+  /* line 326, ../sass/modules/_detailPage.scss */
   .sec-content {
     width: 100%;
     margin: 0;
     padding: 20px;
   }
-  /* line 330, ../sass/modules/_detailPage.scss */
+  /* line 331, ../sass/modules/_detailPage.scss */
   .sec-content h1.title {
     padding: 15px 0;
   }
-  /* line 336, ../sass/modules/_detailPage.scss */
+  /* line 337, ../sass/modules/_detailPage.scss */
   .sec-content .content-gallery .wrapper {
     flex-wrap: wrap;
   }
-  /* line 339, ../sass/modules/_detailPage.scss */
+  /* line 340, ../sass/modules/_detailPage.scss */
   .sec-content .content-gallery .wrapper .col {
     width: 100%;
   }
 
-  /* line 346, ../sass/modules/_detailPage.scss */
+  /* line 347, ../sass/modules/_detailPage.scss */
   .recom-places {
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  /* line 351, ../sass/modules/_detailPage.scss */
+  /* line 352, ../sass/modules/_detailPage.scss */
   .recom-places h3.sub-title {
     text-align: center;
     padding-top: 30px;
   }
-  /* line 356, ../sass/modules/_detailPage.scss */
+  /* line 357, ../sass/modules/_detailPage.scss */
   .recom-places .card-container {
     flex-direction: column;
   }
-  /* line 359, ../sass/modules/_detailPage.scss */
+  /* line 360, ../sass/modules/_detailPage.scss */
   .recom-places .card-container .card {
     min-width: 250px;
     width: 250px;
+  }
+}
+/* line 3, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper {
+  display: flex;
+}
+/* line 7, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 {
+  width: 50%;
+  padding: 0 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 14, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card {
+  width: 100%;
+  background-color: rgba(117, 117, 117, 0.301);
+  border-radius: 7px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* line 25, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+/* line 33, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .profile img {
+  height: 100%;
+  width: auto;
+}
+/* line 39, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .profile-id {
+  margin-top: 20px;
+}
+/* line 42, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .profile-id h4, .review-flexbox .wrapper .col-6 .review-card .profile-id h5 {
+  margin: 5px 0 0 0;
+}
+/* line 48, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .review-text {
+  width: 100%;
+  margin: 10px 0;
+}
+/* line 56, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .review-text:before {
+  content: "\f10d";
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.548);
+}
+/* line 61, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .review-text:after {
+  content: "\f10e";
+  font-size: 40px;
+  position: relative;
+  left: calc(100% - 41px);
+  color: rgba(255, 255, 255, 0.548);
+}
+/* line 69, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .review-text p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  line-height: 26px;
+  padding-top: 5px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 83, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review {
+  width: 100%;
+  margin-top: 50px;
+}
+/* line 88, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review h3.sub-title {
+  margin: 0;
+}
+/* line 92, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review p {
+  text-indent: 0;
+}
+/* line 96, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form {
+  width: 100%;
+}
+/* line 100, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form input, .review-flexbox .write-review form textarea {
+  width: 100%;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  height: 50px;
+  border: 0;
+  padding: 0 10px;
+  border-bottom: 2px solid #e7992a;
+  background: transparent;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+/* line 112, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form input:placeholder-shown::placeholder, .review-flexbox .write-review form textarea:placeholder-shown::placeholder {
+  color: #fff;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+/* line 118, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form textarea {
+  height: 150px;
+  resize: vertical;
+}
+/* line 123, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form button {
+  background-color: #e7992a;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+/* line 133, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form button:hover {
+  background-color: #de8d19;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 144, ../sass/modules/_reviewPage.scss */
+  .review-flexbox .wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 147, ../sass/modules/_reviewPage.scss */
+  .review-flexbox .wrapper .col-6 {
+    width: 100%;
   }
 }

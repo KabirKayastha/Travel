@@ -1,7 +1,9 @@
-@import "base/_variables.scss";
-@import "base/_base.scss";
+//fontawesome imports
 @import "../fontawesome/scss/fontawesome.scss";
 @import "../fontawesome/scss/solid.scss";
+
+@import "base/_variables.scss";
+@import "base/_base.scss";
 @import "modules/_parallax.scss";
 @import "modules/_navbar.scss";
 @import "modules/_header.scss";
@@ -16,3 +18,4 @@
 
 //secondary pages
 @import "modules/_detailPage.scss";
+@import "modules/reviewPage.scss";

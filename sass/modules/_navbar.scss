@@ -96,71 +96,6 @@
 
     .navbar{
         display: none;
-        height: 0;
-        overflow: hidden;
-        width: 100%;
-        margin-left: 0;
-
-        transition: height 800ms ease-in-out;
-        
-        ul{
-            width: 100%;
-            background: #222;
-            flex-direction: column;
-            padding: 0;
-
-            li{
-                text-align: center;
-                // background-color: red;
-                width: 100%;
-                padding: 20px 0;
-
-                &.active{
-                    background: #111;
-                    border: none;
-                }
-            }
-        }
-    }
-
-    .navbar-toggled{
-        height: 400px;
-    }
-    
-    .logo-container{
-        justify-content: space-evenly;
-
-
-        #ham-menu-btn{
-            display: block;
-            border-radius: 5px;
-            border: 2px solid #434343;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 15px;
-            cursor: pointer;
-
-            &:hover{
-                background-color: #222;
-            }
-
-            i{
-                font-size: 30px;
-            }
-
-            .fa-times{
-                display: none;
-            }
-
-            .times-clicked{
-                display: block;
-            }
-
-            .bars-clicked{
-                display: none;
-            }
-        }
     }
 
     #resp-navbar{
@@ -170,20 +105,15 @@
     }
 
     .resp-navbar{
-        // z-index: 99;
         overflow-x: hidden;
 
         .nav-visible{
-            // box-sizing: ;
-            // padding: 0px 20px;
             display: flex;
             justify-content: space-around;
             align-items: center;
-
             max-height: 100px;
             height: 55px;  
-            // margin-top: 30px;
-            
+
             img, #ham-menu-btn{
                 height: 100%;
             }
@@ -220,7 +150,6 @@
         }
 
         ul{
-            // display: none;
             width: 0%;
             position: absolute;
             background: rgba(68, 68, 68, 0.85);
@@ -230,17 +159,53 @@
             z-index: 9;
             overflow: hidden;
 
-            // transform: translateX(100%);
             transition: width .5s ease-in-out;
             li{
                 text-align: center;
-                padding: 15px 0;                
+                padding: 15px 0; 
+                
+                input[type=search]{
+                    color: #fff;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #eaeaea;
+                    padding: 0px 10px;
+                    padding-bottom: 7px;
+
+                    &:placeholder-shown::placeholder{
+                        color: #fff;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+
+                    &:focus{
+                        border-bottom-color: $button-color;
+                    }
+                }
+
+                button{
+                    background-color: $button-color;
+                    background-image: url(D:/work/Travel/images/search.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 60%;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    height: 30px;
+                    position: relative;
+                    top: 7px;
+                    width: 30px;
+
+                    &:hover{
+                        background-color: darken($button-color, 5%);
+                    }
+                }
             }
         }
 
         .nav-shown{
             width: 100%;
-            // transform: translateX(0);
         }
     }
 

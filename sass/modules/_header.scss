@@ -25,6 +25,48 @@
 
         &.right-header{
             text-transform: capitalize;
+
+            li{
+
+                input[type=search]{
+                    width: 250px;
+                    color: #fff;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #eaeaea;
+                    padding: 0px 10px;
+                    padding-bottom: 7px;
+
+                    &:placeholder-shown::placeholder{
+                        color: #fff;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+
+                    &:focus{
+                        border-bottom-color: $button-color;
+                    }
+                }
+
+                button{
+                    background-color: $button-color;
+                    background-image: url(D:/work/Travel/images/search.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 60%;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    height: 30px;
+                    position: relative;
+                    top: 7px;
+                    width: 30px;
+
+                    &:hover{
+                        background-color: darken($button-color, 5%);
+                    }
+                }
+            }
         }
 
         li{

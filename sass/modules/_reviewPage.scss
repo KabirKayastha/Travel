@@ -1,0 +1,152 @@
+.review-flexbox{
+
+    .wrapper{
+
+        display: flex;
+        
+        .col-6{
+            width: 50%;
+            padding: 0 15px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+
+            .review-card{
+                width: 100%;
+                background-color: rgba(117, 117, 117, 0.301);
+                border-radius: 7px;
+                margin: 15px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+
+                .profile{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+
+                    img{
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+
+                .profile-id{
+                    margin-top: 20px;
+
+                    h4,h5{
+                        margin: 5px 0 0 0;
+                    }
+                }
+
+                
+                .review-text{
+                    width: 100%;
+                    margin: 10px 0;
+                        
+                    @extend %fa-icon;
+                    @extend .fas;
+
+                    
+                    &:before{
+                        content: fa-content($fa-var-quote-left);
+                        font-size: 40px;
+                        color: rgba(255, 255, 255, 0.548);
+                    }  
+                    &:after{
+                        content: fa-content($fa-var-quote-right);
+                        font-size: 40px;
+                        position: relative;
+                        left: calc(100% - 41px);
+                        color: rgba(255, 255, 255, 0.548);
+                    }  
+                    
+                    p{
+                        font-family: 'Montserrat Alternates', sans-serif;
+                        line-height: 26px;
+                        padding-top: 5px;
+                        text-align: center;
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+
+                }
+            }
+        }
+    }
+    
+    .write-review{
+        width: 100%;
+        // height: 500px;
+        margin-top: 50px;
+
+        h3.sub-title{
+            margin: 0;
+        }
+
+        p{
+            text-indent: 0;
+        }
+
+        form{
+            // background:royalblue;
+            width: 100%;
+
+            input, textarea{
+                width: 100%;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+                height: 50px;
+                border: 0;
+                padding: 0 10px;
+                border-bottom: 2px solid $button-color;
+                background: transparent;
+                font-family: 'Montserrat Alternates', sans-serif;
+
+                &:placeholder-shown::placeholder{
+                    color: #fff;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                }
+            }
+            
+            textarea{
+                height: 150px;
+                resize: vertical;
+            }
+            
+            button{
+                background-color: $button-color;
+                padding: 10px 40px;
+                border: none;
+                border-radius: 20px;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-weight: 700;
+                letter-spacing: 1px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: darken($button-color, 5%);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .review-flexbox{
+
+        .wrapper{
+            flex-wrap: wrap;
+
+            .col-6{
+                width: 100%;
+            } 
+        }
+    }
+}
