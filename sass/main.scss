@@ -2,6 +2,7 @@
 @import "../fontawesome/scss/fontawesome.scss";
 @import "../fontawesome/scss/solid.scss";
 
+//primary pages
 @import "base/_variables.scss";
 @import "base/_base.scss";
 @import "modules/_parallax.scss";
@@ -19,3 +20,4 @@
 //secondary pages
 @import "modules/_detailPage.scss";
 @import "modules/reviewPage.scss";
+@import "modules/packagePage.scss";

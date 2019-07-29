@@ -8915,3 +8915,96 @@ img.lazy-load {
     width: 100%;
   }
 }
+/* line 1, ../sass/modules/_packagePage.scss */
+.package-content {
+  padding: 40px;
+}
+/* line 4, ../sass/modules/_packagePage.scss */
+.package-content .package-banner {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+/* line 13, ../sass/modules/_packagePage.scss */
+.package-content .package-desc {
+  padding: 20px 0;
+}
+/* line 16, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .content-head {
+  width: 100%;
+  position: relative;
+}
+/* line 29, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .content-head h3 {
+  margin: 0;
+  padding: 20px;
+  border-radius: 3px 3px 0 0;
+  background-color: #5c5c5c;
+  margin-bottom: 0px;
+  width: 100%;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+/* line 41, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .collapsible {
+  padding: 20px;
+  background-color: #5c5c5c;
+  border-radius: 0 0 3px 3px;
+}
+/* line 46, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .collapsible p {
+  margin: 7px 0;
+}
+/* line 49, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .collapsible p:first-child {
+  margin: 0 0 7px 0;
+}
+/* line 54, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .collapsible ul {
+  margin: 0;
+  padding: 10px 30px;
+  line-height: 24px;
+}
+/* line 59, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .collapsible ul li {
+  margin: 0 0 10px 0;
+}
+/* line 64, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .collapsible table {
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  line-height: 24px;
+}
+/* line 74, ../sass/modules/_packagePage.scss */
+.package-content button.book-btn {
+  background-color: #e7992a;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 20px 0;
+  border-radius: 4px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* line 86, ../sass/modules/_packagePage.scss */
+.package-content button.book-btn:hover {
+  background-color: #de8d19;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 93, ../sass/modules/_packagePage.scss */
+  .package-content {
+    padding: 40px 5px;
+  }
+  /* line 99, ../sass/modules/_packagePage.scss */
+  .package-content .package-desc .collapsible {
+    padding: 12px;
+  }
+  /* line 102, ../sass/modules/_packagePage.scss */
+  .package-content .package-desc .collapsible ul {
+    padding: 10px 15px;
+  }
+}
