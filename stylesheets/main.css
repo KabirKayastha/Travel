@@ -9008,3 +9008,219 @@ img.lazy-load {
     padding: 10px 15px;
   }
 }
+/* line 1, ../sass/modules/_galleryPage.scss */
+h1.title.gallery-title {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../sass/modules/_galleryPage.scss */
+.gallery-content {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+/* line 14, ../sass/modules/_galleryPage.scss */
+.gallery-content .col {
+  width: 33%;
+  padding: 10px 20px;
+}
+/* line 18, ../sass/modules/_galleryPage.scss */
+.gallery-content .col .img-container {
+  position: relative;
+  padding: 0;
+  margin: 30px 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #0d3f67;
+  display: flex;
+  flex-direction: column;
+  transition: all .5s ease-in-out;
+}
+/* line 29, ../sass/modules/_galleryPage.scss */
+.gallery-content .col .img-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 10px -8px rgba(26, 26, 26, 0.569);
+}
+/* line 33, ../sass/modules/_galleryPage.scss */
+.gallery-content .col .img-container:hover .desc {
+  display: block;
+  transform: translateY(0);
+}
+/* line 39, ../sass/modules/_galleryPage.scss */
+.gallery-content .col .img-container img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+/* line 45, ../sass/modules/_galleryPage.scss */
+.gallery-content .col .img-container .desc {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(13, 63, 103, 0.7);
+  width: 100%;
+  transform: translateY(100%);
+  padding: 10px;
+  margin: 0;
+  transition: all .5s ease-in-out;
+}
+/* line 55, ../sass/modules/_galleryPage.scss */
+.gallery-content .col .img-container .desc h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 64, ../sass/modules/_galleryPage.scss */
+.thr-footer {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+/* line 70, ../sass/modules/_galleryPage.scss */
+.thr-footer .contact-info {
+  width: 100%;
+  padding: 20px 10px;
+  border-bottom: 2px solid rgba(170, 170, 170, 0.397);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 78, ../sass/modules/_galleryPage.scss */
+.thr-footer .contact-info ul {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  list-style: none;
+}
+/* line 86, ../sass/modules/_galleryPage.scss */
+.thr-footer .basics {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 96, ../sass/modules/_galleryPage.scss */
+  .thr-footer .contact-info {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 103, ../sass/modules/_galleryPage.scss */
+  .gallery-content {
+    flex-wrap: wrap;
+  }
+  /* line 106, ../sass/modules/_galleryPage.scss */
+  .gallery-content .col {
+    width: 100%;
+  }
+}
+/* line 1, ../sass/modules/_booking.scss */
+.booking-content {
+  padding: 20px 100px;
+}
+/* line 4, ../sass/modules/_booking.scss */
+.booking-content .booking-field {
+  display: flex;
+}
+/* line 7, ../sass/modules/_booking.scss */
+.booking-content .booking-field .package-banner {
+  width: 50%;
+}
+/* line 10, ../sass/modules/_booking.scss */
+.booking-content .booking-field .package-banner img {
+  width: 100%;
+}
+/* line 18, ../sass/modules/_booking.scss */
+.booking-content .booking-field .package-banner .package-highlights ul li {
+  margin: 10px 0;
+}
+/* line 29, ../sass/modules/_booking.scss */
+.booking-content .booking-field form h5 {
+  color: #e7992a;
+}
+/* line 33, ../sass/modules/_booking.scss */
+.booking-content .booking-field form textarea, .booking-content .booking-field form input {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  height: 30px;
+  padding: 10px;
+  resize: vertical;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Montserrat Alternates', sans-serif;
+  border: none;
+  border-bottom: 2px solid #e7992a;
+  background: transparent;
+}
+/* line 47, ../sass/modules/_booking.scss */
+.booking-content .booking-field form textarea {
+  height: 80px;
+}
+/* line 51, ../sass/modules/_booking.scss */
+.booking-content .booking-field form input[type=submit] {
+  background: #e7992a;
+  border: none;
+  height: 45px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #e3e3e3;
+  letter-spacing: 1px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  cursor: pointer;
+  border-radius: 3px;
+}
+/* line 63, ../sass/modules/_booking.scss */
+.booking-content .booking-field form input[type=submit]:hover {
+  background: #c87e16;
+}
+
+@media only screen and (min-width: 1100px) {
+  /* line 74, ../sass/modules/_booking.scss */
+  .booking-content form {
+    width: 50%;
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /* line 82, ../sass/modules/_booking.scss */
+  .booking-content {
+    padding: 30px;
+  }
+  /* line 85, ../sass/modules/_booking.scss */
+  .booking-content .booking-field {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 90, ../sass/modules/_booking.scss */
+  .booking-content .booking-field .package-banner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 95, ../sass/modules/_booking.scss */
+  .booking-content .booking-field .package-banner .package-highlights {
+    width: 100%;
+  }
+  /* line 100, ../sass/modules/_booking.scss */
+  .booking-content .booking-field form {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 110, ../sass/modules/_booking.scss */
+  .package-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* line 115, ../sass/modules/_booking.scss */
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

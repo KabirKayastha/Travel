@@ -1,0 +1,110 @@
+h1.title.gallery-title{
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-content{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    
+
+
+    .col{
+        width: 33%;
+        padding: 10px 20px;
+        
+        .img-container{
+            position: relative;
+            padding: 0;
+            margin: 30px 0;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color:$primary-color;
+            display: flex;
+            flex-direction: column;
+            transition: all .5s ease-in-out;
+
+            &:hover{ 
+                transform: scale(1.1);
+                box-shadow: 0 12px 10px -8px $shadow;
+
+                .desc{
+                    display: block;
+                    transform: translateY(0);
+                }
+            }
+            
+            img{
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+            
+            .desc{
+                position: absolute;
+                bottom: 0;
+                background-color: fade-out($primary-color, $amount: .3);
+                width: 100%;
+                transform: translateY(100%);
+                padding: 10px;
+                margin: 0;
+                transition: all .5s ease-in-out;
+
+                h4{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.thr-footer{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    
+    .contact-info{
+        width: 100%;
+        padding: 20px 10px;
+        border-bottom: 2px solid rgba(170, 170, 170, 0.397);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            list-style: none;
+        }
+    }
+
+    .basics{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .thr-footer{
+        
+        .contact-info{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .gallery-content{
+        flex-wrap: wrap;
+
+        .col{
+            width: 100%;
+        }
+    }
+}
