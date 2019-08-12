@@ -13,6 +13,7 @@
 #tours .wrapper .owl-carousel .owl-nav button.owl-prev,
 #reviews .reviews .wrapper .card .review-content .review-text,
 .review-flexbox .wrapper .col-6 .review-card .review-text,
+.package-content .package-desc .desc-content .itinerary,
 .far,
 .fal,
 .fab {
@@ -26,7 +27,7 @@
 }
 
 /* line 18, ../fontawesome/scss/_core.scss */
-#tours .wrapper .owl-carousel .owl-nav button.owl-next, #tours .wrapper .owl-carousel .owl-nav button.owl-prev, #reviews .reviews .wrapper .card .review-content .review-text, .review-flexbox .wrapper .col-6 .review-card .review-text {
+#tours .wrapper .owl-carousel .owl-nav button.owl-next, #tours .wrapper .owl-carousel .owl-nav button.owl-prev, #reviews .reviews .wrapper .card .review-content .review-text, .review-flexbox .wrapper .col-6 .review-card .review-text, .package-content .package-desc .desc-content .itinerary {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -153,6 +154,7 @@
 #tours .wrapper .owl-carousel .owl-nav button.fa-pull-left.owl-prev,
 #reviews .reviews .wrapper .card .review-content .fa-pull-left.review-text,
 .review-flexbox .wrapper .col-6 .review-card .fa-pull-left.review-text,
+.package-content .package-desc .desc-content .fa-pull-left.itinerary,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -165,6 +167,7 @@
 #tours .wrapper .owl-carousel .owl-nav button.fa-pull-right.owl-prev,
 #reviews .reviews .wrapper .card .review-content .fa-pull-right.review-text,
 .review-flexbox .wrapper .col-6 .review-card .fa-pull-right.review-text,
+.package-content .package-desc .desc-content .fa-pull-right.itinerary,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -7231,7 +7234,8 @@ readers do not read off random characters that represent icons */
 #tours .wrapper .owl-carousel .owl-nav button.owl-next,
 #tours .wrapper .owl-carousel .owl-nav button.owl-prev,
 #reviews .reviews .wrapper .card .review-content .review-text,
-.review-flexbox .wrapper .col-6 .review-card .review-text {
+.review-flexbox .wrapper .col-6 .review-card .review-text,
+.package-content .package-desc .desc-content .itinerary {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
@@ -8990,36 +8994,74 @@ img.lazy-load {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 /* line 41, ../sass/modules/_packagePage.scss */
-.package-content .package-desc .collapsible {
+.package-content .package-desc .desc-content {
   padding: 20px;
   background-color: #5c5c5c;
   border-radius: 0 0 3px 3px;
 }
 /* line 46, ../sass/modules/_packagePage.scss */
-.package-content .package-desc .collapsible p {
+.package-content .package-desc .desc-content p {
   margin: 7px 0;
 }
 /* line 49, ../sass/modules/_packagePage.scss */
-.package-content .package-desc .collapsible p:first-child {
+.package-content .package-desc .desc-content p:first-child {
   margin: 0 0 7px 0;
 }
 /* line 54, ../sass/modules/_packagePage.scss */
-.package-content .package-desc .collapsible ul {
+.package-content .package-desc .desc-content ul {
   margin: 0;
   padding: 10px 30px;
   line-height: 24px;
 }
 /* line 59, ../sass/modules/_packagePage.scss */
-.package-content .package-desc .collapsible ul li {
+.package-content .package-desc .desc-content ul li {
   margin: 0 0 10px 0;
 }
 /* line 64, ../sass/modules/_packagePage.scss */
-.package-content .package-desc .collapsible table {
-  border: 1px solid #eee;
-  border-collapse: collapse;
-  line-height: 24px;
+.package-content .package-desc .desc-content .itinerary {
+  position: relative;
+  background-color: #404040;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
 }
-/* line 74, ../sass/modules/_packagePage.scss */
+/* line 75, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .desc-content .itinerary::after {
+  content: "\f107";
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+/* line 88, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .desc-content .itinerary h4, .package-content .package-desc .desc-content .itinerary p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+/* line 94, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .desc-content .itinerary h4 {
+  cursor: pointer;
+  width: 100%;
+}
+/* line 98, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .desc-content .itinerary h4 strong {
+  color: #e7992a;
+}
+/* line 103, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .desc-content .itinerary p {
+  display: none;
+  padding-top: 20px;
+  font-weight: 400;
+}
+/* line 112, ../sass/modules/_packagePage.scss */
+.package-content .package-desc .desc-content .itinerary-opened::after {
+  transform: rotate(180deg);
+}
+/* line 121, ../sass/modules/_packagePage.scss */
 .package-content button.book-btn {
   background-color: #e7992a;
   color: #fff;
@@ -9032,22 +9074,22 @@ img.lazy-load {
   font-size: 20px;
   cursor: pointer;
 }
-/* line 86, ../sass/modules/_packagePage.scss */
+/* line 133, ../sass/modules/_packagePage.scss */
 .package-content button.book-btn:hover {
   background-color: #de8d19;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 93, ../sass/modules/_packagePage.scss */
+  /* line 140, ../sass/modules/_packagePage.scss */
   .package-content {
     padding: 40px 5px;
   }
-  /* line 99, ../sass/modules/_packagePage.scss */
-  .package-content .package-desc .collapsible {
+  /* line 146, ../sass/modules/_packagePage.scss */
+  .package-content .package-desc .desc-content {
     padding: 12px;
   }
-  /* line 102, ../sass/modules/_packagePage.scss */
-  .package-content .package-desc .collapsible ul {
+  /* line 149, ../sass/modules/_packagePage.scss */
+  .package-content .package-desc .desc-content ul {
     padding: 10px 15px;
   }
 }
