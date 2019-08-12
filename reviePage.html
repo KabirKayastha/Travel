@@ -98,6 +98,27 @@
     <div class="sec-content review-flexbox" id="reviewFlexbox">
         <h1 class="title">Reviews</h1>
 
+        <div class="write-review" id="writeReview">
+            <h3 class="sub-title" style="text-align: left">Write a Review</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vel debitis quaerat ea, a quisquam et laboriosam architecto quibusdam perferendis!</p>
+            <form action="">
+                <input type="text" placeholder="Fullname">                
+                <input type="email" placeholder="Email Address">                
+                <input type="text" placeholder="Current Address">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Review"></textarea>   
+
+                <div class="upload-photo">
+                    <div class="profile">
+                        <img src="images/girl-984060_1920.jpg" alt="">
+                    </div>
+                    <a href="#">upload a photo <br> (optional)</a>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <h3 class="sub-title" style="margin-top: 100px;">Our reviews</h3>
         <div class="wrapper">
 
             <div class="col-6">
@@ -164,20 +185,24 @@
                         <h5>Bhaktapur</h5>
                     </div>
                 </div>
+                
+                <div class="review-card">
+                    <div class="profile">
+                        <img src="images/profileimage.png" alt="">
+                    </div>
+
+                    <div class="review-text">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div class="profile-id">
+                        <h4>John Doe</h4>
+                        <h5>Bhaktapur</h5>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="write-review" id="writeReview">
-            <h3 class="sub-title" style="text-align: left">Write a Review</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vel debitis quaerat ea, a quisquam et laboriosam architecto quibusdam perferendis!</p>
-            <form action="">
-                <input type="text" placeholder="Fullname">                
-                <input type="email" placeholder="Email Address">                
-                <input type="text" placeholder="Current Address">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Review"></textarea>                
-                <button type="submit">Send</button>
-            </form>
-        </div>
+        
     </div>
 
     <div class="side-bar">
@@ -361,6 +386,9 @@
         </div>
                 <!-- resp-header -->
         <div class="resp-header" id="resp-header">
+            <a href="index.html">
+                <img src="images/smalllogo.png" alt="">
+            </a>
             <ul>
                 <li><i class="fas fa-phone sm-icon"></i> <a href="#">+977 9841234567</a></li>
                 <li><i class="fas fa-map-marker sm-icon"></i> <a href="#">Suryabinayak, Bhaktapur</a></li>

@@ -40,8 +40,15 @@
                     margin-top: 20px;
 
                     h4,h5{
+                        text-align: center;
                         margin: 5px 0 0 0;
                     }
+
+                    h4{
+                        color: $button-color;
+                        letter-spacing: 1px;
+                    }
+
                 }
 
                 
@@ -119,8 +126,46 @@
                 height: 150px;
                 resize: vertical;
             }
+
+            .upload-photo{
+                display: flex;
+                background-color: rgba(117, 117, 117, 0.301);
+                // background: red;
+                padding: 10px;
+                width: 40%;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: space-around;
+
+                a{
+                    background: $button-color;
+                    padding: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                    text-transform: capitalize;
+
+                    &:hover{
+                        background-color: darken($button-color, 5%);
+                    }
+                }
+
+                .profile{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    
+                    img{
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
             
             button{
+                margin: 20px 0;
                 background-color: $button-color;
                 padding: 10px 40px;
                 border: none;

@@ -7236,12 +7236,12 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-/* line 7, ../sass/base/_base.scss */
+/* line 1, ../sass/base/_base.scss */
 html {
   scroll-behavior: smooth;
 }
 
-/* line 11, ../sass/base/_base.scss */
+/* line 5, ../sass/base/_base.scss */
 body, .body {
   margin: 0;
   padding: 0;
@@ -7251,25 +7251,25 @@ body, .body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-/* line 21, ../sass/base/_base.scss */
+/* line 15, ../sass/base/_base.scss */
 .body {
   padding: 100px 0 0 0;
   letter-spacing: 1px;
 }
 
-/* line 30, ../sass/base/_base.scss */
+/* line 24, ../sass/base/_base.scss */
 * {
   box-sizing: border-box;
   outline: transparent;
 }
 
-/* line 35, ../sass/base/_base.scss */
+/* line 29, ../sass/base/_base.scss */
 a {
   text-decoration: none;
   color: #f4f4f4;
 }
 
-/* line 40, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 .card-container {
   display: flex;
   justify-content: center;
@@ -7277,7 +7277,7 @@ a {
   flex-wrap: wrap;
 }
 
-/* line 47, ../sass/base/_base.scss */
+/* line 41, ../sass/base/_base.scss */
 .card {
   margin: 20px 10px;
   border-radius: 10px;
@@ -7286,7 +7286,7 @@ a {
   overflow: hidden;
 }
 
-/* line 55, ../sass/base/_base.scss */
+/* line 49, ../sass/base/_base.scss */
 h1.title {
   text-align: center;
   margin: 0px 0 50px 0;
@@ -7300,7 +7300,7 @@ h1.title {
   font-variant: small-caps;
 }
 
-/* line 68, ../sass/base/_base.scss */
+/* line 62, ../sass/base/_base.scss */
 h3.sub-title {
   text-align: center;
   margin: -20px 0 50px 0;
@@ -7313,12 +7313,12 @@ h3.sub-title {
   font-variant: small-caps;
 }
 
-/* line 81, ../sass/base/_base.scss */
+/* line 75, ../sass/base/_base.scss */
 .section-all {
   padding: 0 80px;
 }
 
-/* line 86, ../sass/base/_base.scss */
+/* line 80, ../sass/base/_base.scss */
 .icon-container {
   display: flex;
   justify-content: center;
@@ -7326,7 +7326,7 @@ h3.sub-title {
   border-radius: 50%;
 }
 
-/* line 93, ../sass/base/_base.scss */
+/* line 87, ../sass/base/_base.scss */
 .to-top-button {
   width: 60px;
   height: 60px;
@@ -7342,18 +7342,18 @@ h3.sub-title {
   z-index: 99;
   cursor: pointer;
 }
-/* line 108, ../sass/base/_base.scss */
+/* line 102, ../sass/base/_base.scss */
 .to-top-button a {
   width: 100%;
   height: 100%;
 }
-/* line 113, ../sass/base/_base.scss */
+/* line 107, ../sass/base/_base.scss */
 .to-top-button img {
   width: 100%;
   height: 100%;
 }
 
-/* line 119, ../sass/base/_base.scss */
+/* line 113, ../sass/base/_base.scss */
 .svg-icon, .sm-icon {
   color: #e6e6e6;
   font-weight: bolder;
@@ -7361,7 +7361,7 @@ h3.sub-title {
   width: 20px;
 }
 
-/* line 126, ../sass/base/_base.scss */
+/* line 120, ../sass/base/_base.scss */
 .primary-button {
   padding: 7px 15px;
   border: none;
@@ -7375,13 +7375,13 @@ h3.sub-title {
   cursor: pointer;
 }
 
-/* line 139, ../sass/base/_base.scss */
+/* line 133, ../sass/base/_base.scss */
 img.lazy-load {
   transform: translateY(-50%);
   transition: all 500ms;
 }
 
-/* line 146, ../sass/base/_base.scss */
+/* line 140, ../sass/base/_base.scss */
 .lazy-fade {
   transform: translateY(0);
   opacity: 1;
@@ -7389,17 +7389,17 @@ img.lazy-load {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 155, ../sass/base/_base.scss */
+  /* line 149, ../sass/base/_base.scss */
   .section-all {
     padding: 0;
   }
 
-  /* line 159, ../sass/base/_base.scss */
+  /* line 153, ../sass/base/_base.scss */
   .card {
     max-width: 280px;
   }
 
-  /* line 163, ../sass/base/_base.scss */
+  /* line 157, ../sass/base/_base.scss */
   h1.title {
     font-size: 36px;
     text-align: center;
@@ -8819,20 +8819,26 @@ img.lazy-load {
 }
 /* line 42, ../sass/modules/_reviewPage.scss */
 .review-flexbox .wrapper .col-6 .review-card .profile-id h4, .review-flexbox .wrapper .col-6 .review-card .profile-id h5 {
+  text-align: center;
   margin: 5px 0 0 0;
 }
-/* line 48, ../sass/modules/_reviewPage.scss */
+/* line 47, ../sass/modules/_reviewPage.scss */
+.review-flexbox .wrapper .col-6 .review-card .profile-id h4 {
+  color: #e7992a;
+  letter-spacing: 1px;
+}
+/* line 55, ../sass/modules/_reviewPage.scss */
 .review-flexbox .wrapper .col-6 .review-card .review-text {
   width: 100%;
   margin: 10px 0;
 }
-/* line 56, ../sass/modules/_reviewPage.scss */
+/* line 63, ../sass/modules/_reviewPage.scss */
 .review-flexbox .wrapper .col-6 .review-card .review-text:before {
   content: "\f10d";
   font-size: 40px;
   color: rgba(255, 255, 255, 0.548);
 }
-/* line 61, ../sass/modules/_reviewPage.scss */
+/* line 68, ../sass/modules/_reviewPage.scss */
 .review-flexbox .wrapper .col-6 .review-card .review-text:after {
   content: "\f10e";
   font-size: 40px;
@@ -8840,7 +8846,7 @@ img.lazy-load {
   left: calc(100% - 41px);
   color: rgba(255, 255, 255, 0.548);
 }
-/* line 69, ../sass/modules/_reviewPage.scss */
+/* line 76, ../sass/modules/_reviewPage.scss */
 .review-flexbox .wrapper .col-6 .review-card .review-text p {
   font-family: 'Montserrat Alternates', sans-serif;
   line-height: 26px;
@@ -8849,24 +8855,24 @@ img.lazy-load {
   width: 80%;
   margin: 0 auto;
 }
-/* line 83, ../sass/modules/_reviewPage.scss */
+/* line 90, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review {
   width: 100%;
   margin-top: 50px;
 }
-/* line 88, ../sass/modules/_reviewPage.scss */
+/* line 95, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review h3.sub-title {
   margin: 0;
 }
-/* line 92, ../sass/modules/_reviewPage.scss */
+/* line 99, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review p {
   text-indent: 0;
 }
-/* line 96, ../sass/modules/_reviewPage.scss */
+/* line 103, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review form {
   width: 100%;
 }
-/* line 100, ../sass/modules/_reviewPage.scss */
+/* line 107, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review form input, .review-flexbox .write-review form textarea {
   width: 100%;
   color: #fff;
@@ -8879,18 +8885,55 @@ img.lazy-load {
   background: transparent;
   font-family: 'Montserrat Alternates', sans-serif;
 }
-/* line 112, ../sass/modules/_reviewPage.scss */
+/* line 119, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review form input:placeholder-shown::placeholder, .review-flexbox .write-review form textarea:placeholder-shown::placeholder {
   color: #fff;
   font-family: 'Montserrat Alternates', sans-serif;
 }
-/* line 118, ../sass/modules/_reviewPage.scss */
+/* line 125, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review form textarea {
   height: 150px;
   resize: vertical;
 }
-/* line 123, ../sass/modules/_reviewPage.scss */
+/* line 130, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form .upload-photo {
+  display: flex;
+  background-color: rgba(117, 117, 117, 0.301);
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+/* line 140, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form .upload-photo a {
+  background: #e7992a;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* line 147, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form .upload-photo a:hover {
+  background-color: #de8d19;
+}
+/* line 152, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form .upload-photo .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+/* line 160, ../sass/modules/_reviewPage.scss */
+.review-flexbox .write-review form .upload-photo .profile img {
+  height: 100%;
+  width: auto;
+}
+/* line 167, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review form button {
+  margin: 20px 0;
   background-color: #e7992a;
   padding: 10px 40px;
   border: none;
@@ -8900,17 +8943,17 @@ img.lazy-load {
   letter-spacing: 1px;
   cursor: pointer;
 }
-/* line 133, ../sass/modules/_reviewPage.scss */
+/* line 178, ../sass/modules/_reviewPage.scss */
 .review-flexbox .write-review form button:hover {
   background-color: #de8d19;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 144, ../sass/modules/_reviewPage.scss */
+  /* line 189, ../sass/modules/_reviewPage.scss */
   .review-flexbox .wrapper {
     flex-wrap: wrap;
   }
-  /* line 147, ../sass/modules/_reviewPage.scss */
+  /* line 192, ../sass/modules/_reviewPage.scss */
   .review-flexbox .wrapper .col-6 {
     width: 100%;
   }
@@ -9223,4 +9266,75 @@ h1.title.gallery-title {
     width: 100%;
     padding: 0 10px;
   }
+}
+/* line 1, ../sass/modules/_packageList.scss */
+.package-grid {
+  display: flex;
+  padding: 0 20px;
+}
+/* line 5, ../sass/modules/_packageList.scss */
+.package-grid .col {
+  width: 50%;
+  padding: 20px;
+  margin: 20px 0;
+}
+/* line 10, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item {
+  height: 300px;
+  background-color: #0d3f67;
+  width: 100%;
+  border-radius: 5px;
+  margin: 30px 0;
+  overflow: hidden;
+  display: flex;
+}
+/* line 19, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .img-container {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+/* line 25, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .img-container img {
+  height: 100%;
+}
+/* line 30, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .right {
+  width: 50%;
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+/* line 37, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .right .desc {
+  width: 100%;
+}
+/* line 40, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .right .desc h4 {
+  margin: 10px 0;
+  padding: 0;
+}
+/* line 45, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .right .desc ul {
+  padding: 0;
+  list-style: none;
+}
+/* line 49, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .right .desc ul li {
+  margin: 5px 0;
+  color: #e7992a;
+}
+/* line 56, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .right a {
+  width: 100%;
+  background-color: #e7992a;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 3px;
+}
+/* line 63, ../sass/modules/_packageList.scss */
+.package-grid .col .package-item .right a:hover {
+  background-color: #de8d19;
 }
