@@ -9129,7 +9129,7 @@ h1.title.gallery-title {
   box-shadow: 0 12px 10px -8px rgba(26, 26, 26, 0.569);
 }
 /* line 33, ../sass/modules/_galleryPage.scss */
-.gallery-content .col .img-container:hover .desc {
+.gallery-content .col .img-container:hover h4 {
   display: block;
   transform: translateY(0);
 }
@@ -9140,7 +9140,7 @@ h1.title.gallery-title {
   margin: 0;
 }
 /* line 45, ../sass/modules/_galleryPage.scss */
-.gallery-content .col .img-container .desc {
+.gallery-content .col .img-container h4 {
   position: absolute;
   bottom: 0;
   background-color: rgba(13, 63, 103, 0.7);
@@ -9149,11 +9149,8 @@ h1.title.gallery-title {
   padding: 10px;
   margin: 0;
   transition: all .5s ease-in-out;
-}
-/* line 55, ../sass/modules/_galleryPage.scss */
-.gallery-content .col .img-container .desc h4 {
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 /* line 64, ../sass/modules/_galleryPage.scss */
@@ -9419,4 +9416,104 @@ h1.title.gallery-title {
   .package-grid .col .package-item .right {
     width: 100%;
   }
+}
+/* line 1, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(37, 37, 37, 0.938);
+  z-index: 99999;
+  display: none;
+}
+/* line 11, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 80px 50px;
+}
+/* line 18, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .lb-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+/* line 28, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .lb-close span {
+  position: absolute;
+  top: 10px;
+  background-color: #fff;
+  height: 10px;
+  width: 120%;
+  border-radius: 2px;
+}
+/* line 36, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .lb-close span:first-child {
+  transform: rotate(45deg);
+}
+/* line 40, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .lb-close span:last-child {
+  transform: rotate(-45deg);
+}
+/* line 47, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+/* line 54, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .preview-container {
+  width: 80%;
+  position: relative;
+  background: gray;
+  transform: scale(0.9);
+}
+/* line 61, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .preview-container .img-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 68, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .preview-container .img-container img {
+  width: 100%;
+}
+/* line 73, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .preview-container .caption {
+  position: absolute;
+  background-color: rgba(13, 63, 103, 0.8);
+  bottom: -2px;
+  z-index: 99;
+  width: 100%;
+}
+/* line 81, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .preview-container .caption h4 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+/* line 90, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .lb-btn {
+  background: transparent;
+  border: none;
+}
+/* line 94, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .lb-btn i {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 99, ../sass/modules/_lightboxModal.scss */
+.lightbox-modal .lightbox .wrapper .lb-btn i:hover {
+  color: #d1d0d0;
 }

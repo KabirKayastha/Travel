@@ -1,0 +1,107 @@
+.lightbox-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.938);
+    z-index: 99999;
+    display: none;
+
+    .lightbox{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 80px 50px;
+        // background: red;
+        
+        .lb-close{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            transform: scale(0.8);
+            cursor: pointer;
+            
+    
+            span{
+                position: absolute;
+                top: 10px;
+                background-color: #fff;
+                height: 10px;
+                width: 120%;
+                border-radius: 2px;
+
+                &:first-child{
+                    transform: rotate(45deg);
+                }
+
+                &:last-child{
+                    transform: rotate(-45deg);
+                }
+            }
+
+        }
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+
+            .preview-container{
+                width: 80%;
+                position: relative;
+                background: gray;
+                // padding: 100px 0;
+                transform: scale(0.9);
+                                
+                .img-container{
+                    // height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    // flex-direction: column;
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .caption{
+                    position: absolute;
+                    background-color: transparentize($primary-color, $amount: .2);
+                    // top: 0;
+                    bottom: -2px;
+                    z-index: 99;
+                    width: 100%;
+                    
+                    h4{
+                        padding: 20px;
+                        margin: 0;
+                        color: #fff;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            .lb-btn{
+                background: transparent;
+                border: none;
+                
+                i{
+                    font-size: 50px;
+                    color: #fff;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: rgb(209, 208, 208);
+                    }
+                }
+                // height: 50px;
+            }
+        }
+    }    
+}

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery | Travel</title>
 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 <body style="padding-top: 60px">
@@ -97,91 +98,91 @@
     <!-- /navbar -->
 
     <h1 class="title gallery-title">gallery</h1>
+
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox">
+            <div class="lb-close" id="lbClose">
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="wrapper">
+                <button class="lb-btn" id="lbPrev">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+
+                <div class="preview-container">                    
+                    <div class="img-container">
+                        <img src="" alt="" id="modalImage">
+                    </div>
+
+                    <div class="caption">
+                        <h4 id="captionText"></h4>
+                    </div>
+                </div>
+                
+                <button class="lb-btn" id="lbNext">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
     
     <div class="gallery-content" id="galleryContent">
 
         <div class="col">
             <div class="img-container">
-                <img src="images/shutterstock_468651074.jpg" alt="">
+                <img src="images/shutterstock_468651074.jpg" alt="" class="modal-img">
 
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <h4 class="desc-text">Hello Pokhara!!</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/nepal-everest-1.jpg" alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/nepal-everest-1.jpg" alt="" class="modal-img">
+                <h4 class="desc-text">Hello Everest</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/blue-eyes-237438_1920.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/blue-eyes-237438_1920.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">Blue eyes</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/Goddess-Kumari-of-nepal.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/Goddess-Kumari-of-nepal.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">Kumari</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/pokhara.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/pokhara.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">Pokhara</h4>
             </div>
         </div>
 
         <div class="col">
             
             <div class="img-container">
-                <img src="images/pokhara.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/girl-872149_1920.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">girl glass</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/Goddess-Kumari-of-nepal.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/Goddess-Kumari-of-nepal.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">goddess kumari</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/man-1620502_1920.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/man-1620502_1920.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">Man pose</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/shutterstock_176969939.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/shutterstock_176969939.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">Chaitya</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/53693064.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/53693064.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">Boats</h4>
             </div>
 
         </div>
@@ -189,43 +190,28 @@
         <div class="col">
             
             <div class="img-container">
-                <img src="images/1-ghandruk-village-in-the-annapurna-region-dutourdumonde-photography.jpg" alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/1-ghandruk-village-in-the-annapurna-region-dutourdumonde-photography.jpg" alt="" class="modal-img">
+                <h4 class="desc-text">Ghandruk</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/sunset-815270_1920.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/sunset-815270_1920.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">sunset</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/landscape-615429_1920.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/landscape-615429_1920.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">LAndscape</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/girl-872149_1920.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/girl-984060_1920.jpg" alt="" class="modal-img">
+                <h4 class="desc-text">girl green</h4>
             </div>
 
             <div class="img-container">
-                <img src="images/fantasy-2925250.jpg " alt="">
-
-                <div class="desc">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                </div>
+                <img src="images/fantasy-2925250.jpg " alt="" class="modal-img">
+                <h4 class="desc-text">fantasy-2925250</h4>
             </div>
         </div>
     </div>
@@ -289,6 +275,7 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/_detailPageNav.js"></script>
+    <script src="js/lightboxModal.js"></script>
     
 </body>
 </html>
