@@ -7992,17 +7992,21 @@ img.lazy-load {
   margin: 0;
 }
 
-/* line 5, ../sass/modules/_favouriteDestinations.scss */
+/* line 1, ../sass/modules/_favouriteDestinations.scss */
+#favourite {
+  text-align: center;
+}
+/* line 4, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card {
   height: 300px;
   width: 300px;
   justify-content: center;
 }
-/* line 12, ../sass/modules/_favouriteDestinations.scss */
+/* line 11, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card img.card-image {
   height: 100%;
 }
-/* line 16, ../sass/modules/_favouriteDestinations.scss */
+/* line 15, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card span.tag {
   position: relative;
   bottom: 100px;
@@ -8014,12 +8018,12 @@ img.lazy-load {
   padding: 8px 0px 8px 12px;
   border-radius: 5px 0 0 5px;
 }
-/* line 27, ../sass/modules/_favouriteDestinations.scss */
+/* line 26, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card span.tag h4 {
   margin: 0;
   text-transform: capitalize;
 }
-/* line 33, ../sass/modules/_favouriteDestinations.scss */
+/* line 31, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card span.tag .icon-container {
   width: 30px;
   height: 30px;
@@ -8027,20 +8031,24 @@ img.lazy-load {
   margin: 0 10px 0 10px;
   background: #f4f4f4;
 }
-/* line 40, ../sass/modules/_favouriteDestinations.scss */
+/* line 38, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card span.tag .icon-container a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 45, ../sass/modules/_favouriteDestinations.scss */
+/* line 43, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card span.tag .icon-container a img {
   height: 100%;
   width: 100%;
 }
-/* line 51, ../sass/modules/_favouriteDestinations.scss */
+/* line 49, ../sass/modules/_favouriteDestinations.scss */
 #favourite .card-container .card span.tag .icon-container:hover {
   background: #ddd;
+}
+/* line 57, ../sass/modules/_favouriteDestinations.scss */
+#favourite .button-container {
+  margin-top: 30px;
 }
 
 /* line 5, ../sass/modules/_packages.scss */
@@ -8268,30 +8276,31 @@ img.lazy-load {
     padding-bottom: 0;
   }
 }
-/* line 3, ../sass/modules/_contact.scss */
+/* line 2, ../sass/modules/_contact.scss */
 #contact .wrapper {
   display: flex;
   padding: 0 50px;
   margin: 50px 0;
 }
-/* line 8, ../sass/modules/_contact.scss */
+/* line 7, ../sass/modules/_contact.scss */
 #contact .wrapper .map {
   width: 100%;
   padding: 20px;
 }
-/* line 13, ../sass/modules/_contact.scss */
+/* line 12, ../sass/modules/_contact.scss */
 #contact .wrapper .map iframe {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
-/* line 20, ../sass/modules/_contact.scss */
+/* line 19, ../sass/modules/_contact.scss */
 #contact .wrapper form {
   width: 100%;
   padding: 30px;
 }
-/* line 24, ../sass/modules/_contact.scss */
-#contact .wrapper form .input, #contact .wrapper form textarea {
+/* line 23, ../sass/modules/_contact.scss */
+#contact .wrapper form .input,
+#contact .wrapper form textarea {
   display: block;
   width: 100%;
   height: 50px;
@@ -8301,10 +8310,11 @@ img.lazy-load {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #f4f4f4;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 /* line 37, ../sass/modules/_contact.scss */
-#contact .wrapper form .input::placeholder, #contact .wrapper form textarea::placeholder {
+#contact .wrapper form .input::placeholder,
+#contact .wrapper form textarea::placeholder {
   color: #f4f4f4;
 }
 /* line 42, ../sass/modules/_contact.scss */
@@ -8314,20 +8324,65 @@ img.lazy-load {
   margin-top: 15px;
 }
 /* line 48, ../sass/modules/_contact.scss */
-#contact .wrapper form input[type=submit] {
+#contact .wrapper form input[type="submit"] {
   margin: 10px 0;
 }
 
+/* line 55, ../sass/modules/_contact.scss */
+.message-bubble {
+  position: fixed;
+  bottom: 20vh;
+  left: 0;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #e7992a;
+  border-radius: 0 10px 10px 0;
+  z-index: 999;
+}
+/* line 65, ../sass/modules/_contact.scss */
+.message-bubble a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 72, ../sass/modules/_contact.scss */
+.message-bubble i {
+  font-size: 35px;
+  color: #0d3f67;
+  padding-left: 5px;
+}
+/* line 78, ../sass/modules/_contact.scss */
+.message-bubble span {
+  color: #292929;
+  font-weight: bolder;
+  text-align: center;
+  padding-left: 5px;
+  font-size: 16px;
+  width: 0px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+}
+/* line 92, ../sass/modules/_contact.scss */
+.message-bubble:hover span {
+  width: 65px;
+}
+
 @media only screen and (max-width: 1025px) {
-  /* line 58, ../sass/modules/_contact.scss */
+  /* line 100, ../sass/modules/_contact.scss */
   #contact .wrapper {
     flex-wrap: wrap;
     padding: 0;
   }
-  /* line 63, ../sass/modules/_contact.scss */
+  /* line 104, ../sass/modules/_contact.scss */
   #contact .wrapper .map {
     min-height: 400px;
     height: 400px;
+  }
+
+  /* line 111, ../sass/modules/_contact.scss */
+  .message-bubble {
+    display: none;
   }
 }
 /* line 1, ../sass/modules/_footer.scss */

@@ -31,6 +31,7 @@ function nextImage(){
     return galleryImages[currentImageIndex];
 }
 
+//prev image 
 function prevImage(){
     if(currentImageIndex === 0){
         currentImageIndex = galleryImages.length;
@@ -43,7 +44,7 @@ function prevImage(){
 }
 
    
-//enable the lightbox only on screen width greater than 768px
+//(media query) enable the lightbox only on screen width greater than 768px
 function mediaCheck(media){
     if(media.matches){
         return;
