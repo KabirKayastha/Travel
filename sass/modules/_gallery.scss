@@ -1,38 +1,55 @@
-#gallery{
-
-    .wrapper{
-
-        .owl-carousel .owl-dots{
-            margin-top: 30px;
-            display: block;
-        }
-        
-        .owl-carousel .owl-nav{
-            display: none;
-        }
-        
-        .img-container{
-            height: 220px;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-            border-radius: 3px; 
-            background: $background-color;
-            
-            img{
-                height: 100%;
-                width: auto;
-            }
-        }
+#gallery {
+  .wrapper {
+    .owl-carousel .owl-dots {
+      margin-top: 30px;
+      display: block;
     }
 
-    .button-container{
-        margin: 30px auto;
-        display: flex;
-        justify-content: center;
-        
-        a{
-            margin: 0 auto;
-        }
+    .owl-carousel .owl-nav {
+      display: none;
     }
+
+    .img-container {
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 3px;
+      background: $background-color;
+      position: relative;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+      .caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        background: transparentize($primary-color, $amount: 0.7);
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+
+        a:hover {
+          color: $button-color;
+        }
+      }
+      &:hover .caption {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .button-container {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 0 auto;
+    }
+  }
 }

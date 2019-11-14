@@ -8136,16 +8136,16 @@ img.lazy-load {
   margin: 0 auto;
 }
 
-/* line 5, ../sass/modules/_gallery.scss */
+/* line 3, ../sass/modules/_gallery.scss */
 #gallery .wrapper .owl-carousel .owl-dots {
   margin-top: 30px;
   display: block;
 }
-/* line 10, ../sass/modules/_gallery.scss */
+/* line 8, ../sass/modules/_gallery.scss */
 #gallery .wrapper .owl-carousel .owl-nav {
   display: none;
 }
-/* line 14, ../sass/modules/_gallery.scss */
+/* line 12, ../sass/modules/_gallery.scss */
 #gallery .wrapper .img-container {
   height: 220px;
   display: flex;
@@ -8153,19 +8153,40 @@ img.lazy-load {
   overflow: hidden;
   border-radius: 3px;
   background: #292929;
+  position: relative;
 }
-/* line 22, ../sass/modules/_gallery.scss */
+/* line 21, ../sass/modules/_gallery.scss */
 #gallery .wrapper .img-container img {
   height: 100%;
   width: auto;
 }
-/* line 29, ../sass/modules/_gallery.scss */
+/* line 25, ../sass/modules/_gallery.scss */
+#gallery .wrapper .img-container .caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  background: rgba(13, 63, 103, 0.3);
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+/* line 36, ../sass/modules/_gallery.scss */
+#gallery .wrapper .img-container .caption a:hover {
+  color: #e7992a;
+}
+/* line 40, ../sass/modules/_gallery.scss */
+#gallery .wrapper .img-container:hover .caption {
+  transform: translateY(0);
+}
+/* line 46, ../sass/modules/_gallery.scss */
 #gallery .button-container {
   margin: 30px auto;
   display: flex;
   justify-content: center;
 }
-/* line 34, ../sass/modules/_gallery.scss */
+/* line 51, ../sass/modules/_gallery.scss */
 #gallery .button-container a {
   margin: 0 auto;
 }
